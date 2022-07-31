@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Отзыв о седоне</title>
+  <base href="https://htmlacademy-adaptive.github.io/2016315-sedona-26/2/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="">
+      <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__button">
+        <img src=" img/icon-menu.svg" alt="Открыть Меню" width="23" height="22">
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="list__item">
+            <a class="list__item-link" href="index.html">Главная</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item-link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item-link">Форма отзыва</a>
+          </li>
+          <li class="list__item">
+            <a class="list__item-link" href="https://htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visualli-hidden">Форма заполнения отзыва</h1>
+    <section class="page-main__review">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="reviw__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопрмечательностях</p>
+    </section>
+    <div class="page-main__wrapper">
+      <form class="wrapper__groop" action="https://echo.htmlacademy.ru" method="get">
+        <section class="groop__full-name">
+          <h2 class="full-name__title">Представьтесь</h2>
+          <label class="full-name__control">
+            <span class="control__text">Имя*:</span>
+            <input class="control__input" type="text" value="Пётр">
+          </label>
+          <label class="full-name__control">
+            <span class="control__text">Фамилия*:</span>
+            <input class="control__input" type="text" value="Пустота">
+          </label>
+          <label class="full-name__control">
+            <span class="control__text">Отчество*:</span>
+            <input class="control__input" type="text" value="Викторович">
+          </label>
+        </section>
+        <section class="groop__contact-info">
+          <h2 class="contact-info__title">Контактная информация</h2>
+          <label class="contact-info__control-info">
+            <span class="control-info__text">Контактный телефон*:</span>
+            <input class="control-info__input" type="text" placeholder="Введите телефон">
+            <span class="contact-info__phone-image"></span>
+          </label>
+          <label class="contact-info__control-info">
+            <span class="control-info__text">Электронная почта*:</span>
+            <input class="control-info__input" type="email" placeholder="Введите e-mail">
+            <span class="contact-info__email-image"></span>
+          </label>
+        </section>
+        <section class="groop__impression">
+          <h2 class="impression__title">Ваше общее впечатление:</h2>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="positive">
+            <span class="control-impression__text">Скорее положительное</span>
+          </label>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="negative">
+            <span class="control-impression__text">Скорее отрицательное</span>
+          </label>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="dont-know">
+            <span class="control-impression__text">Затрудняюсь ответить</span>
+          </label>
+        </section>
+        <section class="groop__visited">
+          <h2 class="visited__title">Посещенные достопримечательности:</h2>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Мост дьявола</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Гора-Колокол</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Слайд-парк</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Красные скалы</span>
+          </label>
+        </section>
+        <section class="groop__emotions">
+          <h2 class="emotions__title">Опишите свои эмоции:</h2>
+          <label class="emotions__control-emotions">
+            <textarea class="control-emotions__textarea" name="text" cols="30" rows="10"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+          <button class="control-emotions__button" type="button">Отправить отзыв</button>
+          <span class="control-emotions__text">*-Обязательные поля</span>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <h2 class="visualli-hidden">Как с нами связаться</h2>
+    <a class="page-footer__link-sedona" href="#">#Visitsedona</a>
+    <ul class="page-footer__social">
+      <li class="social social--vkontakte">
+        <a href="https://vk.com/htmlacademy">
+          <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M27.45 5.948C27.616 5.402 27.45 5 26.655 5H24.03C23.362 5 23.054 5.347 22.887 5.73C22.887 5.73 21.552 8.926 19.661 11.002C19.049 11.604 18.771 11.795 18.437 11.795C18.27 11.795 18.019 11.604 18.019 11.057V5.948C18.019 5.292 17.835 5 17.279 5H13.151C12.734 5 12.483 5.304 12.483 5.593C12.483 6.214 13.429 6.358 13.526 8.106V11.904C13.526 12.737 13.373 12.888 13.039 12.888C12.149 12.888 9.984 9.677 8.699 6.003C8.45 5.288 8.198 5 7.527 5H4.9C4.15 5 4 5.347 4 5.73C4 6.412 4.89 9.8 8.145 14.281C10.315 17.341 13.37 19 16.153 19C17.822 19 18.028 18.632 18.028 17.997V15.684C18.028 14.947 18.186 14.8 18.715 14.8C19.105 14.8 19.772 14.992 21.33 16.467C23.11 18.216 23.403 19 24.405 19H27.03C27.78 19 28.156 18.632 27.94 17.904C27.702 17.18 26.852 16.129 25.725 14.882C25.113 14.172 24.195 13.407 23.916 13.024C23.527 12.533 23.638 12.314 23.916 11.877C23.916 11.877 27.116 7.451 27.449 5.948H27.45Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="social social--telegram">
+        <a href="https://t.me/htmlacademy">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="social social--youtube">
+        <a href="https://www.youtube.com/user/htmlacademyru">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <a class="page-footer__link-academy" href="https://htmlacademy.ru">Разработано
+      <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+          fill="black" />
+      </svg>
+    </a>
+  </footer>
+
+</body>
+
+</html>
