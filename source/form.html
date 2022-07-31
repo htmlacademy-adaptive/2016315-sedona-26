@@ -43,71 +43,77 @@
     </section>
     <section class="page-main__full-name">
       <h2 class="full-name__title">Представьтесь</h2>
-      <form action="https://echo.htmlacademy.ru" method="get">
-        <label for="">
-          <input type="text" value="Пётр">Имя*:
+      <form class="full-name__groop" action="https://echo.htmlacademy.ru" method="get">
+        <label>
+          <p>Имя*:</p>
+          <input type="text" value="Пётр">
         </label>
-        <label for="">
-          <input type="text" value="Пустота">Фамилия*:
+        <label>
+          <p>Фамилия*:</p>
+          <input type="text" value="Пустота">
         </label>
-        <label for="">
-          <input type="text" value="Викторович">Отчество*:
+        <label>
+          <p>Отчество*:</p>
+          <input type="text" value="Викторович">
         </label>
-        <section class="page-main__contact-info">
-          <h2 class="contact-info__title">Контактная информация</h2>
-          <label for="">
-            <input type="text" placeholder="Введите телефон">Контактный телефон*:
-            <span class="contact-info__phone-image"></span>
-          </label>
-          <label for="">
-            <input type="email" placeholder="Введите e-mail">Электронная почта*:
-            <span class="contact-info__email-image"></span>
-          </label>
-        </section>
-        <section class="page-main__impression">
-          <h2 class="impression__title">Ваше общее впечатление:</h2>
-          <label for="">
-            <input type="radio">Скорее положительное
-            <span></span>
-          </label>
-          <label for="">
-            <input type="radio">Скорее отрицательное
-            <span></span>
-          </label>
-          <label for="">
-            <input type="radio">Затрудняюсь ответить
-            <span></span>
-          </label>
-        </section>
-        <section class="page-main__visited">
-          <h2 class="visited__title">Посещенные достопримечательности:</h2>
-          <label for="">
-            <input type="checkbox">Мост дьявола
-            <span></span>
-          </label>
-          <label for="">
-            <input type="checkbox">Гора-Колокол
-            <span></span>
-          </label>
-          <label for="">
-            <input type="checkbox">Слайд-парк
-            <span></span>
-          </label>
-          <label for="">
-            <input type="checkbox">Красные скалы
-            <span></span>
-          </label>
-        </section>
-        <section class="page-main__emotions">
-          <h2 class="emotions__title">Опишите свои эмоции:</h2>
-          <label for="">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-          </label>
-          <button type="button">Отправить отзыв</button>
-          <span>*-Обязательные поля</span>
-        </section>
-      </form>
     </section>
+    <section class="page-main__contact-info">
+      <h2 class="contact-info__title">Контактная информация</h2>
+      <label>
+        <p>Контактный телефон*:</p>
+        <input type="text" placeholder="Введите телефон">
+        <span class="contact-info__phone-image"></span>
+      </label>
+      <label>
+        <p>Электронная почта*:</p>
+        <input type="email" placeholder="Введите e-mail">
+        <span class="contact-info__email-image"></span>
+      </label>
+    </section>
+    <section class="page-main__impression">
+      <h2 class="impression__title">Ваше общее впечатление:</h2>
+      <label>
+        <input type="radio" name="impression" value="positive">
+        <span>Скорее положительное</span>
+      </label>
+      <label>
+        <input type="radio" name="impression" value="negative">
+        <span>Скорее отрицательное</span>
+      </label>
+      <label>
+        <input type="radio" name="impression" value="dont-know">
+        <span>Затрудняюсь ответить</span>
+      </label>
+    </section>
+    <section class="page-main__visited">
+      <h2 class="visited__title">Посещенные достопримечательности:</h2>
+      <label>
+        <input type="checkbox">
+        <span>Мост дьявола</span>
+      </label>
+      <label>
+        <input type="checkbox">
+        <span>Гора-Колокол</span>
+      </label>
+      <label>
+        <input type="checkbox">
+        <span>Слайд-парк</span>
+      </label>
+      <label>
+        <input type="checkbox">
+        <span>Красные скалы</span>
+      </label>
+    </section>
+    <section class="page-main__emotions">
+      <h2 class="emotions__title">Опишите свои эмоции:</h2>
+      <label>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </label>
+      <button type="button">Отправить отзыв</button>
+      <span>*-Обязательные поля</span>
+    </section>
+    </form>
+
   </main>
 
   <footer class="page-footer">
