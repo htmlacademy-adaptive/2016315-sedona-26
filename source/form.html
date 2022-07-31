@@ -41,79 +41,81 @@
       <p class="reviw__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопрмечательностях</p>
     </section>
-    <section class="page-main__full-name">
-      <h2 class="full-name__title">Представьтесь</h2>
-      <form class="full-name__groop" action="https://echo.htmlacademy.ru" method="get">
-        <label>
-          <p>Имя*:</p>
-          <input type="text" value="Пётр">
-        </label>
-        <label>
-          <p>Фамилия*:</p>
-          <input type="text" value="Пустота">
-        </label>
-        <label>
-          <p>Отчество*:</p>
-          <input type="text" value="Викторович">
-        </label>
-    </section>
-    <section class="page-main__contact-info">
-      <h2 class="contact-info__title">Контактная информация</h2>
-      <label>
-        <p>Контактный телефон*:</p>
-        <input type="text" placeholder="Введите телефон">
-        <span class="contact-info__phone-image"></span>
-      </label>
-      <label>
-        <p>Электронная почта*:</p>
-        <input type="email" placeholder="Введите e-mail">
-        <span class="contact-info__email-image"></span>
-      </label>
-    </section>
-    <section class="page-main__impression">
-      <h2 class="impression__title">Ваше общее впечатление:</h2>
-      <label>
-        <input type="radio" name="impression" value="positive">
-        <span>Скорее положительное</span>
-      </label>
-      <label>
-        <input type="radio" name="impression" value="negative">
-        <span>Скорее отрицательное</span>
-      </label>
-      <label>
-        <input type="radio" name="impression" value="dont-know">
-        <span>Затрудняюсь ответить</span>
-      </label>
-    </section>
-    <section class="page-main__visited">
-      <h2 class="visited__title">Посещенные достопримечательности:</h2>
-      <label>
-        <input type="checkbox">
-        <span>Мост дьявола</span>
-      </label>
-      <label>
-        <input type="checkbox">
-        <span>Гора-Колокол</span>
-      </label>
-      <label>
-        <input type="checkbox">
-        <span>Слайд-парк</span>
-      </label>
-      <label>
-        <input type="checkbox">
-        <span>Красные скалы</span>
-      </label>
-    </section>
-    <section class="page-main__emotions">
-      <h2 class="emotions__title">Опишите свои эмоции:</h2>
-      <label>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-      </label>
-      <button type="button">Отправить отзыв</button>
-      <span>*-Обязательные поля</span>
-    </section>
-    </form>
-
+    <div class="page-main__wrapper">
+      <form class="wrapper__groop" action="https://echo.htmlacademy.ru" method="get">
+        <section class="groop__full-name">
+          <h2 class="full-name__title">Представьтесь</h2>
+          <label class="full-name__control">
+            <span class="control__text">Имя*:</span>
+            <input class="control__input" type="text" value="Пётр">
+          </label>
+          <label class="full-name__control">
+            <span class="control__text">Фамилия*:</span>
+            <input class="control__input" type="text" value="Пустота">
+          </label>
+          <label class="full-name__control">
+            <span class="control__text">Отчество*:</span>
+            <input class="control__input" type="text" value="Викторович">
+          </label>
+        </section>
+        <section class="groop__contact-info">
+          <h2 class="contact-info__title">Контактная информация</h2>
+          <label class="contact-info__control-info">
+            <span class="control-info__text">Контактный телефон*:</span>
+            <input class="control-info__input" type="text" placeholder="Введите телефон">
+            <span class="contact-info__phone-image"></span>
+          </label>
+          <label class="contact-info__control-info">
+            <span class="control-info__text">Электронная почта*:</span>
+            <input class="control-info__input" type="email" placeholder="Введите e-mail">
+            <span class="contact-info__email-image"></span>
+          </label>
+        </section>
+        <section class="groop__impression">
+          <h2 class="impression__title">Ваше общее впечатление:</h2>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="positive">
+            <span class="control-impression__text">Скорее положительное</span>
+          </label>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="negative">
+            <span class="control-impression__text">Скорее отрицательное</span>
+          </label>
+          <label class="impression__control-impression">
+            <input class="control-impression__input" type="radio" name="impression" value="dont-know">
+            <span class="control-impression__text">Затрудняюсь ответить</span>
+          </label>
+        </section>
+        <section class="groop__visited">
+          <h2 class="visited__title">Посещенные достопримечательности:</h2>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Мост дьявола</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Гора-Колокол</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Слайд-парк</span>
+          </label>
+          <label class="visited__control-visited">
+            <input class="control-visited__input" type="checkbox">
+            <span class="control-visited__text">Красные скалы</span>
+          </label>
+        </section>
+        <section class="groop__emotions">
+          <h2 class="emotions__title">Опишите свои эмоции:</h2>
+          <label class="emotions__control-emotions">
+            <textarea class="control-emotions__textarea" name="text" cols="30" rows="10"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+          <button class="control-emotions__button" type="button">Отправить отзыв</button>
+          <span class="control-emotions__text">*-Обязательные поля</span>
+        </section>
+      </form>
+    </div>
   </main>
 
   <footer class="page-footer">
