@@ -37,14 +37,14 @@
   <main class="page-main">
     <h1 class="visually-hidden">Форма заполнения отзыва</h1>
     <section class="page-main__review review">
-      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <h2 class="review__title title-heading">Оставьте свой отзыв</h2>
       <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопрмечательностях</p>
     </section>
     <div class="page-main__wrapper wrapper">
       <form class="wrapper__groop groop" action="https://echo.htmlacademy.ru" method="get">
         <section class="groop__full-name">
-          <h2 class="groop__title">Представьтесь</h2>
+          <h2 class="groop__title-heading">Представьтесь</h2>
           <label class="groop__control">
             <span class="groop__text">Имя*:</span>
             <input class="groop__input" type="text" name="name" value="Пётр" required>
@@ -59,54 +59,56 @@
           </label>
         </section>
         <section class="groop__contact-info">
-          <h2 class="groop__title-info">Контактная информация</h2>
+          <h2 class="groop__title-heading">Контактная информация</h2>
           <label class="groop__control-info">
-            <span class="groop__text-info">Контактный телефон*:</span>
-            <input class="groop__input-info" type="tel" name="phone" placeholder="Введите телефон" required>
+            <span class="groop__text">Контактный телефон*:</span>
+            <input class="groop__input groop__input--phone" type="tel" name="phone" placeholder="Введите телефон"
+              required>
             <span class="groop__phone-info-image"></span>
           </label>
           <label class="groop__control-info">
-            <span class="groop__text-info">Электронная почта*:</span>
-            <input class="groop__input-info" type="email" name="email" placeholder="Введите e-mail" required>
+            <span class="groop__text">Электронная почта*:</span>
+            <input class="groop__input groop__input--email" type="email" name="email" placeholder="Введите e-mail"
+              required>
             <span class="groop__email-info-image"></span>
           </label>
         </section>
         <section class="groop__impression">
-          <h2 class="groop__title-impression">Ваше общее впечатление:</h2>
+          <h2 class="groop__title-heading">Ваше общее впечатление:</h2>
           <label class="groop__control-impression">
             <input class="groop__input-impression" type="radio" name="impression" value="positive">
-            <span class="groop__text-impression">Скорее положительное</span>
+            <span class="groop__text-bold groop__text--impression">Скорее положительное</span>
           </label>
           <label class="groop__control-impression">
             <input class="groop__input-impression" type="radio" name="impression" value="negative">
-            <span class="groop__text-impression">Скорее отрицательное</span>
+            <span class="groop__text-bold groop__text--impression">Скорее отрицательное</span>
           </label>
           <label class="groop__control-impression">
             <input class="groop__input-impression" type="radio" name="impression" value="dont-know">
-            <span class="groop__text-impression">Затрудняюсь ответить</span>
+            <span class="groop__text-bold groop__text--impression">Затрудняюсь ответить</span>
           </label>
         </section>
         <section class="groop__visited">
-          <h2 class="groop__title-visited">Посещенные достопримечательности:</h2>
+          <h2 class="groop__title-heading">Посещенные достопримечательности:</h2>
           <label class="groop__control-visited">
             <input class="groop__input-visited" type="checkbox" name="devil's-bridge" checked>
-            <span class="groop__text-visited">Мост дьявола</span>
+            <span class="groop__text-bold groop__text--visited">Мост дьявола</span>
           </label>
           <label class="groop__control-visited">
             <input class="groop__input-visited" type="checkbox" name="bell-mountain" checked>
-            <span class="groop__text-visited">Гора-Колокол</span>
+            <span class="groop__text-bold groop__text--visited">Гора-Колокол</span>
           </label>
           <label class="groop__control-visited">
             <input class="groop__input-visited" type="checkbox" name="slide-park" checked>
-            <span class="groop__text-visited">Слайд-парк</span>
+            <span class="groop__text-bold groop__text--visited">Слайд-парк</span>
           </label>
           <label class="groop__control-visited">
             <input class="groop__input-visited" type="checkbox" name="red-rocks">
-            <span class="groop__text-visited">Красные скалы</span>
+            <span class="groop__text-bold groop__text--visited">Красные скалы</span>
           </label>
         </section>
         <section class="groop__emotions">
-          <h2 class="groop__title-emotions">Опишите свои эмоции:</h2>
+          <h2 class="groop__title-heading">Опишите свои эмоции:</h2>
           <label class="groop__control-emotions">
             <textarea class="groop__textarea-emotions" name="text" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
@@ -114,13 +116,15 @@
           <button class="groop__submit-emotions" type="submit">Отправить отзыв</button>
           <span class="groop__text-emotions">*-Обязательные поля</span>
           <div class="groop__error">
-            <h2 class="groop__error-title">Что-то пошло не так!</h2>
-            <p class="groop__error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+            <h2 class="groop__heading groop__heading--error ">Что-то пошло не так!</h2>
+            <p class="groop__description groop__description--error">Проверьте поля, выделенные красным, скорее всего вы
+              забыли их заполнить</p>
             <button class="groop__error-button">Ок</button>
           </div>
           <div class="groop__fixed">
-            <h2 class="groop__fixed-title">Ваш отзыв отправлен!</h2>
-            <p class="groop__fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+            <h2 class="groop__heading groop__heading--fixed">Ваш отзыв отправлен!</h2>
+            <p class="groop__description groop__description--fixed">Спасибо за ваше участие, ваш отзыв уже поступил к
+              нам. В ближайшее время мы
               опубликуем его на сайте.</p>
             <button class="groop__fixed-button">Закрыть окно</button>
           </div>
