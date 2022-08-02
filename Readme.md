@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Юрий Сажнев](https://up.htmlacademy.ru/adaptive/26/user/2016315).
-* Наставник: `Екатерина Комнатная`(https://htmlacademy.ru/profile/id215761).
+* Наставник: [Екатерина Комнатная](https://htmlacademy.ru/profile/id215761).
 
 ---
 
