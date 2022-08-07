@@ -1,0 +1,74 @@
+.advantages__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
+.advantages__number {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.advantages__item-color {
+  background: #81B3D2;
+  padding: 54px 22px 40px 16px;
+  .advantages__title, .advantages__text, .advantages__number {
+    color: #FFFFFF;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+}
+
+.advantages__title-icon-house {
+  height: 40px;
+  background-image: url('../../img/icon-house.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages__title-icon-burger {
+  height: 40px;
+  background-image: url('../../img/icon-burger.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.advantages__title-icon-gift {
+  height: 40px;
+  background-image: url('../../img/icon-gift.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.advantages__item {
+  padding: 23px 15px;
+}
+
+.advantages__item-advantages {
+  background-color: #EEEEEE;
+  padding: 26px 18px;
+}

@@ -1,0 +1,43 @@
+.interested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 30px 32px;
+}
+
+.interested__title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.interested__text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 261px;
+  color: #333333;
+}
+
+.interested__link {
+  text-decoration: none;
+  background: #81B3D2;
+  color: #ffffff;
+  padding: 16px 49px;
+  width: 186px;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  margin-bottom: 49px;
+}
