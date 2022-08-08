@@ -7,7 +7,7 @@
 .page-footer__link-sedona {
   text-decoration: none;
   width: 166px;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 21px;
@@ -19,7 +19,7 @@
   margin-top: 38px;
 }
 
-.page-footer__social {
+.page-footer__list-social {
   width: 166px;
   display: flex;
   gap: 10px;
@@ -30,11 +30,14 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
-  .social__link {
-    display: inline-block;
-    padding: 12px;
-    background: #81B3D2;
-  }
+}
+
+.page-footer__social-link {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  background: #81b3d2;
 }
 
 .page-footer__academy {
@@ -48,7 +51,7 @@
 }
 
 .page-footer__title {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

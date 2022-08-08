@@ -1,6 +1,9 @@
-@use "./blocks/header.scss";
-@use "./blocks/page-body.scss";
-@use "./blocks/main-welcome.scss";
-@use "./blocks/advantages.scss";
-@use "./blocks/interested.scss";
-@use "./blocks/page-footer.scss";
+@import "./blocks/font.scss";
+@import "./blocks/global.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/welcome.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/interested.scss";
+@import "./blocks/page-footer.scss";

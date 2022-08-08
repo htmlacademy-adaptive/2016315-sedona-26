@@ -1,0 +1,19 @@
+.main-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__button {
+  position: absolute;
+  left: 120px;
+  right: auto;
+  margin: auto 0;
+  border: none;
+}
+
+.main-nav__wrapper {
+  display: none;
+}
+
+//Выпадающее меню

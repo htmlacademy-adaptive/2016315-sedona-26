@@ -1,4 +1,6 @@
 .main-header {
+  min-height: 56px;
+  position: relative;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -6,15 +8,13 @@
   gap: 25px;
 }
 
-.main-nav__wrapper {
-  display: none;
-}
-
-.main-header__logo, .main-header__logo-image {
-  margin-left: 35px;
-}
-
-.main-nav__button {
-  margin-top: 17px;
-  border: none;
+.main-header__logo,
+.main-header__logo-image {
+  width: 185px;
+  position: absolute;
+  margin: 0 auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

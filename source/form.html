@@ -17,18 +17,18 @@
         <img class="main-nav__image" src=" img/icon-menu.svg" alt="Открыть Меню" width="23" height="22">
       </button>
       <div class="main-nav__wrapper">
-        <ul class="main-nav__list list">
-          <li class="list__item">
-            <a class="list__item-link" href="index.html">Главная</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="index.html">Главная</a>
           </li>
-          <li class="list__item">
-            <a class="list__item-link" href="catalog.html">Фото и видео</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="list__item">
-            <a class="list__item-link">Форма отзыва</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link">Форма отзыва</a>
           </li>
-          <li class="list__item">
-            <a class="list__item-link" href="https://htmlacademy.ru">Html academy</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="https://htmlacademy.ru">Html academy</a>
           </li>
         </ul>
       </div>
@@ -42,88 +42,90 @@
       <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопрмечательностях</p>
     </section>
-    <div class="page-main__wrapper wrapper">
-      <form class="wrapper__groop groop" action="https://echo.htmlacademy.ru" method="get">
-        <section class="groop__full-name">
-          <h2 class="groop__title">Представьтесь</h2>
-          <label class="groop__control">
-            <span class="groop__text">Имя*:</span>
-            <input class="groop__input" type="text" name="name" value="Пётр" required>
+    <div class="page-main__wrapper">
+      <form class="page-main__groop" action="https://echo.htmlacademy.ru" method="get">
+        <section class="page-main__groop-full-name">
+          <h2 class="page-main__groop-title">Представьтесь</h2>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Имя*:</span>
+            <input class="page-main__groop-input" type="text" name="name" value="Пётр" required>
           </label>
-          <label class="groop__control">
-            <span class="groop__text">Фамилия*:</span>
-            <input class="groop__input" type="text" name="surname" value="Пустота" required>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Фамилия*:</span>
+            <input class="page-main__groop-input" type="text" name="surname" value="Пустота" required>
           </label>
-          <label class="groop__control">
-            <span class="groop__text">Отчество*:</span>
-            <input class="groop__input" type="text" name="patronymic" value="Викторович" required>
-          </label>
-        </section>
-        <section class="groop__contact-info">
-          <h2 class="groop__title-info">Контактная информация</h2>
-          <label class="groop__control-info">
-            <span class="groop__text-info">Контактный телефон*:</span>
-            <input class="groop__input-info" type="tel" name="phone" placeholder="Введите телефон" required>
-            <span class="groop__phone-info-image"></span>
-          </label>
-          <label class="groop__control-info">
-            <span class="groop__text-info">Электронная почта*:</span>
-            <input class="groop__input-info" type="email" name="email" placeholder="Введите e-mail" required>
-            <span class="groop__email-info-image"></span>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Отчество*:</span>
+            <input class="page-main__groop-input" type="text" name="patronymic" value="Викторович" required>
           </label>
         </section>
-        <section class="groop__impression">
-          <h2 class="groop__title-impression">Ваше общее впечатление:</h2>
-          <label class="groop__control-impression">
-            <input class="groop__input-impression" type="radio" name="impression" value="positive">
-            <span class="groop__text-impression">Скорее положительное</span>
+        <section class="page-main__groop-contact-info">
+          <h2 class="page-main__groop-title-info">Контактная информация</h2>
+          <label class="page-main__groop-control-info">
+            <span class="page-main__groop-text-info">Контактный телефон*:</span>
+            <input class="page-main__groop-input-info" type="tel" name="phone" placeholder="Введите телефон" required>
+            <span class="page-main__groop-phone-info-image"></span>
           </label>
-          <label class="groop__control-impression">
-            <input class="groop__input-impression" type="radio" name="impression" value="negative">
-            <span class="groop__text-impression">Скорее отрицательное</span>
-          </label>
-          <label class="groop__control-impression">
-            <input class="groop__input-impression" type="radio" name="impression" value="dont-know">
-            <span class="groop__text-impression">Затрудняюсь ответить</span>
+          <label class="page-main__groop-control-info">
+            <span class="page-main__groop-text-info">Электронная почта*:</span>
+            <input class="page-main__groop-input-info" type="email" name="email" placeholder="Введите e-mail" required>
+            <span class="page-main__groop-email-info-image"></span>
           </label>
         </section>
-        <section class="groop__visited">
-          <h2 class="groop__title-visited">Посещенные достопримечательности:</h2>
-          <label class="groop__control-visited">
-            <input class="groop__input-visited" type="checkbox" name="devil's-bridge" checked>
-            <span class="groop__text-visited">Мост дьявола</span>
+        <section class="page-main__groop-impression">
+          <h2 class="page-main__groop-title-impression">Ваше общее впечатление:</h2>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="positive">
+            <span class="page-main__groop-text-impression">Скорее положительное</span>
           </label>
-          <label class="groop__control-visited">
-            <input class="groop__input-visited" type="checkbox" name="bell-mountain" checked>
-            <span class="groop__text-visited">Гора-Колокол</span>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="negative">
+            <span class="page-main__groop-text-impression">Скорее отрицательное</span>
           </label>
-          <label class="groop__control-visited">
-            <input class="groop__input-visited" type="checkbox" name="slide-park" checked>
-            <span class="groop__text-visited">Слайд-парк</span>
-          </label>
-          <label class="groop__control-visited">
-            <input class="groop__input-visited" type="checkbox" name="red-rocks">
-            <span class="groop__text-visited">Красные скалы</span>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="dont-know">
+            <span class="page-main__groop-text-impression">Затрудняюсь ответить</span>
           </label>
         </section>
-        <section class="groop__emotions">
-          <h2 class="groop__title-emotions">Опишите свои эмоции:</h2>
-          <label class="groop__control-emotions">
-            <textarea class="groop__textarea-emotions" name="text" cols="30" rows="10"
+        <section class="page-main__groop-visited">
+          <h2 class="page-main__groop-title-visited">Посещенные достопримечательности:</h2>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="devil's-bridge" checked>
+            <span class="page-main__groop-text-visited">Мост дьявола</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="bell-mountain" checked>
+            <span class="page-main__groop-text-visited">Гора-Колокол</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="slide-park" checked>
+            <span class="page-main__groop-text-visited">Слайд-парк</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="red-rocks">
+            <span class="page-main__groop-text-visited">Красные скалы</span>
+          </label>
+        </section>
+        <section class="page-main__groop-emotions">
+          <h2 class="page-main__groop-title-emotions">Опишите свои эмоции:</h2>
+          <label class="page-main__groop-control-emotions">
+            <textarea class="page-main__groop-textarea-emotions" name="text" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
           </label>
-          <button class="groop__submit-emotions" type="submit">Отправить отзыв</button>
-          <span class="groop__text-emotions">*-Обязательные поля</span>
-          <div class="groop__error">
-            <h2 class="groop__error-title">Что-то пошло не так!</h2>
-            <p class="groop__error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-            <button class="groop__error-button">Ок</button>
+          <button class="page-main__groop-submit-emotions" type="submit">Отправить отзыв</button>
+          <span class="page-main__groop-text-emotions">*-Обязательные поля</span>
+          <div class="page-main__groop-error">
+            <h2 class="page-main__groop-error-title">Что-то пошло не так!</h2>
+            <p class="page-main__groop-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+              заполнить</p>
+            <button class="page-main__groop-error-button">Ок</button>
           </div>
-          <div class="groop__fixed">
-            <h2 class="groop__fixed-title">Ваш отзыв отправлен!</h2>
-            <p class="groop__fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы
+          <div class="page-main__groop-fixed">
+            <h2 class="page-main__groop-fixed-title">Ваш отзыв отправлен!</h2>
+            <p class="page-main__groop-fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+              время мы
               опубликуем его на сайте.</p>
-            <button class="groop__fixed-button">Закрыть окно</button>
+            <button class="page-main__groop-fixed-button">Закрыть окно</button>
           </div>
         </section>
       </form>
@@ -133,9 +135,9 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Как с нами связаться</h2>
     <a class="page-footer__link-sedona" href="#">#Visitsedona</a>
-    <ul class="page-footer__social">
-      <li class="social social--vkontakte">
-        <a class="social__link" href="https://vk.com/htmlacademy">
+    <ul class="page-footer__list-social">
+      <li class="page-footer-social page-footer-social--vkontakte">
+        <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
           <svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd"
               d="M27.45 5.948C27.616 5.402 27.45 5 26.655 5H24.03C23.362 5 23.054 5.347 22.887 5.73C22.887 5.73 21.552 8.926 19.661 11.002C19.049 11.604 18.771 11.795 18.437 11.795C18.27 11.795 18.019 11.604 18.019 11.057V5.948C18.019 5.292 17.835 5 17.279 5H13.151C12.734 5 12.483 5.304 12.483 5.593C12.483 6.214 13.429 6.358 13.526 8.106V11.904C13.526 12.737 13.373 12.888 13.039 12.888C12.149 12.888 9.984 9.677 8.699 6.003C8.45 5.288 8.198 5 7.527 5H4.9C4.15 5 4 5.347 4 5.73C4 6.412 4.89 9.8 8.145 14.281C10.315 17.341 13.37 19 16.153 19C17.822 19 18.028 18.632 18.028 17.997V15.684C18.028 14.947 18.186 14.8 18.715 14.8C19.105 14.8 19.772 14.992 21.33 16.467C23.11 18.216 23.403 19 24.405 19H27.03C27.78 19 28.156 18.632 27.94 17.904C27.702 17.18 26.852 16.129 25.725 14.882C25.113 14.172 24.195 13.407 23.916 13.024C23.527 12.533 23.638 12.314 23.916 11.877C23.916 11.877 27.116 7.451 27.449 5.948H27.45Z"
@@ -143,8 +145,8 @@
           </svg>
         </a>
       </li>
-      <li class="social social--telegram">
-        <a class="social__link" href="https://t.me/htmlacademy">
+      <li class="page-footer-social page-footer-social--telegram">
+        <a class="page-footer__social-link" href="https://t.me/htmlacademy">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
@@ -152,8 +154,8 @@
           </svg>
         </a>
       </li>
-      <li class="social social--youtube">
-        <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
+      <li class="page-footer-social page-footer-social--youtube">
+        <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
