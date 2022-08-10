@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Отзыв о седоне</title>
+  <base href="https://htmlacademy-adaptive.github.io/2016315-sedona-26/5/">
+</head>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__button">
+        <img class="main-nav__image" src=" img/icon-menu.svg" alt="Открыть Меню" width="23" height="22">
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link">Форма отзыва</a>
+          </li>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-item-link" href="https://htmlacademy.ru">Html academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Форма заполнения отзыва</h1>
+    <div class="review">
+      <img src="./img/sedona.svg" alt="Название седона.">
+    </div>
+    <section class="review__next">
+      <h2 class="review__title">Оставьте свой отзыв</h2>
+      <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
+        достопрмечательностях</p>
+    </section>
+    <div class="page-main__wrapper">
+      <form class="page-main__groop" action="https://echo.htmlacademy.ru" method="get">
+        <section class="page-main__groop-full-name">
+          <h2 class="page-main__groop-title">Представьтесь</h2>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Имя*:</span>
+            <input class="page-main__groop-input" type="text" name="name" value="Пётр" required>
+          </label>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Фамилия*:</span>
+            <input class="page-main__groop-input" type="text" name="surname" value="Пустота" required>
+          </label>
+          <label class="page-main__groop-control">
+            <span class="page-main__groop-text">Отчество*:</span>
+            <input class="page-main__groop-input" type="text" name="patronymic" value="Викторович" required>
+          </label>
+        </section>
+        <section class="page-main__groop-contact-info">
+          <h2 class="page-main__groop-title-info">Контактная информация</h2>
+          <label class="page-main__groop-control-info">
+            <span class="page-main__groop-text-info">Контактный телефон*:</span>
+            <input class="page-main__groop-input-info-phone" type="tel" name="phone" placeholder="Введите телефон"
+              required>
+          </label>
+          <label class="page-main__groop-control-info">
+            <span class="page-main__groop-text-info">Электронная почта*:</span>
+            <input class="page-main__groop-input-info-email" type="email" name="email" placeholder="Введите e-mail"
+              required>
+          </label>
+        </section>
+        <section class="page-main__groop-impression">
+          <h2 class="page-main__groop-title-impression">Ваше общее впечатление:</h2>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="positive">
+            <span class="page-main__groop-mark-impression"></span>
+            <span class="page-main__groop-text-impression">Скорее положительное</span>
+          </label>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="negative">
+            <span class="page-main__groop-mark-impression"></span>
+            <span class="page-main__groop-text-impression">Скорее отрицательное</span>
+          </label>
+          <label class="page-main__groop-control-impression">
+            <input class="page-main__groop-input-impression" type="radio" name="impression" value="dont-know">
+            <span class="page-main__groop-mark-impression"></span>
+            <span class="page-main__groop-text-impression">Затрудняюсь ответить</span>
+          </label>
+        </section>
+        <section class="page-main__groop-visited">
+          <h2 class="page-main__groop-title-visited">Посещенные достопримечательности:</h2>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="devil's-bridge" checked>
+            <span class="page-main__groop-mark-visited"></span>
+            <span class="page-main__groop-text-visited">Мост дьявола</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="bell-mountain" checked>
+            <span class="page-main__groop-mark-visited"></span>
+            <span class="page-main__groop-text-visited">Гора-Колокол</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="slide-park" checked>
+            <span class="page-main__groop-mark-visited"></span>
+            <span class="page-main__groop-text-visited">Слайд-парк</span>
+          </label>
+          <label class="page-main__groop-control-visited">
+            <input class="page-main__groop-input-visited" type="checkbox" name="red-rocks">
+            <span class="page-main__groop-mark-visited"></span>
+            <span class="page-main__groop-text-visited">Красные скалы</span>
+          </label>
+        </section>
+        <section class="page-main__groop-emotions">
+          <h2 class="page-main__groop-title-emotions">Опишите свои эмоции:</h2>
+          <label class="page-main__groop-control-emotions">
+            <textarea class="page-main__groop-textarea-emotions" name="text" cols="30" rows="10"
+              placeholder="Опишите подробно все свои восторги"></textarea>
+          </label>
+          <button class="page-main__groop-submit-emotions" type="submit">Отправить отзыв</button>
+          <span class="page-main__groop-text-emotions">*-Обязательные поля</span>
+        </section>
+      </form>
+    </div>
+  </main>
+
+  <section class="form-error">
+    <div class="form-error__groop-error">
+      <h2 class="form-error__groop-error-title">Что-то пошло не так!</h2>
+      <p class="form-error__groop-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+      <button class="form-error__groop-error-button">Ок</button>
+    </div>
+  </section>
+  <section class="form-fixed">
+    <div class="form-fixed__groop-fixed">
+      <h2 class="form-fixed__groop-fixed-title">Ваш отзыв отправлен!</h2>
+      <p class="form-fixed__groop-fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+        время мы
+        опубликуем его на сайте.</p>
+      <div class="form-fixed__groop-fixed-wallpaper">
+        <button class="form-fixed__groop-fixed-button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <h2 class="visually-hidden">Как с нами связаться</h2>
+    <a class="page-footer__link-sedona" href="#">#Visitsedona</a>
+    <ul class="page-footer__list-social">
+      <li class="page-footer-social page-footer-social--vkontakte">
+        <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M23.45 5.948C23.616 5.402 23.45 5 22.655 5H20.03C19.362 5 19.054 5.347 18.887 5.73C18.887 5.73 17.552 8.926 15.661 11.002C15.049 11.604 14.771 11.795 14.437 11.795C14.27 11.795 14.019 11.604 14.019 11.057V5.948C14.019 5.292 13.835 5 13.279 5H9.151C8.734 5 8.483 5.304 8.483 5.593C8.483 6.214 9.429 6.358 9.526 8.106V11.904C9.526 12.737 9.373 12.888 9.039 12.888C8.149 12.888 5.984 9.677 4.699 6.003C4.45 5.288 4.198 5 3.527 5H0.9C0.15 5 0 5.347 0 5.73C0 6.412 0.89 9.8 4.145 14.281C6.315 17.341 9.37 19 12.153 19C13.822 19 14.028 18.632 14.028 17.997V15.684C14.028 14.947 14.186 14.8 14.715 14.8C15.105 14.8 15.772 14.992 17.33 16.467C19.11 18.216 19.403 19 20.405 19H23.03C23.78 19 24.156 18.632 23.94 17.904C23.702 17.18 22.852 16.129 21.725 14.882C21.113 14.172 20.195 13.407 19.916 13.024C19.527 12.533 19.638 12.314 19.916 11.877C19.916 11.877 23.116 7.451 23.449 5.948H23.45Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer-social page-footer-social--telegram">
+        <a class="page-footer__social-link" href="https://t.me/htmlacademy">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.4393 4.62225L19.2705 19.566C19.0313 20.6205 18.408 20.883 17.5223 20.3865L12.6938 16.8285L10.3643 19.0695C10.1063 19.3275 9.891 19.5428 9.39375 19.5428L9.741 14.6258L18.6893 6.54C19.0785 6.1935 18.6045 6.00075 18.0848 6.348L7.02225 13.314L2.25976 11.823C1.22401 11.4998 1.20526 10.7873 2.47576 10.29L21.1035 3.11325C21.966 2.79 22.7205 3.30525 22.4393 4.623V4.62225Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+      <li class="page-footer-social page-footer-social--youtube">
+        <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M19.1813 5H4.81331C3.30618 5 2 6.3 2 7.8V16.1C2 17.7 3.30618 19 4.81331 19H19.1813C20.7889 19 21.9946 17.7 21.9946 16.2V7.8C22.095 6.3 20.7889 5 19.1813 5ZM9.03326 15.4V8.6L15.8656 12L9.03326 15.4Z"
+              fill="white" />
+          </svg>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__academy">
+      <p class="page-footer__title">Разработано</p>
+      <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive"><svg width="27" height="35"
+          viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z"
+            fill="black" />
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
