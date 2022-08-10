@@ -37,7 +37,10 @@
 
   <main class="page-main">
     <h1 class="visually-hidden">Форма заполнения отзыва</h1>
-    <section class="page-main__review review">
+    <div class="review">
+      <img src="./img/sedona.svg" alt="Название седона.">
+    </div>
+    <section class="review__next">
       <h2 class="review__title">Оставьте свой отзыв</h2>
       <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
         достопрмечательностях</p>
@@ -63,27 +66,30 @@
           <h2 class="page-main__groop-title-info">Контактная информация</h2>
           <label class="page-main__groop-control-info">
             <span class="page-main__groop-text-info">Контактный телефон*:</span>
-            <input class="page-main__groop-input-info" type="tel" name="phone" placeholder="Введите телефон" required>
-            <span class="page-main__groop-phone-info-image"></span>
+            <input class="page-main__groop-input-info-phone" type="tel" name="phone" placeholder="Введите телефон"
+              required>
           </label>
           <label class="page-main__groop-control-info">
             <span class="page-main__groop-text-info">Электронная почта*:</span>
-            <input class="page-main__groop-input-info" type="email" name="email" placeholder="Введите e-mail" required>
-            <span class="page-main__groop-email-info-image"></span>
+            <input class="page-main__groop-input-info-email" type="email" name="email" placeholder="Введите e-mail"
+              required>
           </label>
         </section>
         <section class="page-main__groop-impression">
           <h2 class="page-main__groop-title-impression">Ваше общее впечатление:</h2>
           <label class="page-main__groop-control-impression">
             <input class="page-main__groop-input-impression" type="radio" name="impression" value="positive">
+            <span class="page-main__groop-mark-impression"></span>
             <span class="page-main__groop-text-impression">Скорее положительное</span>
           </label>
           <label class="page-main__groop-control-impression">
             <input class="page-main__groop-input-impression" type="radio" name="impression" value="negative">
+            <span class="page-main__groop-mark-impression"></span>
             <span class="page-main__groop-text-impression">Скорее отрицательное</span>
           </label>
           <label class="page-main__groop-control-impression">
             <input class="page-main__groop-input-impression" type="radio" name="impression" value="dont-know">
+            <span class="page-main__groop-mark-impression"></span>
             <span class="page-main__groop-text-impression">Затрудняюсь ответить</span>
           </label>
         </section>
@@ -91,18 +97,22 @@
           <h2 class="page-main__groop-title-visited">Посещенные достопримечательности:</h2>
           <label class="page-main__groop-control-visited">
             <input class="page-main__groop-input-visited" type="checkbox" name="devil's-bridge" checked>
+            <span class="page-main__groop-mark-visited"></span>
             <span class="page-main__groop-text-visited">Мост дьявола</span>
           </label>
           <label class="page-main__groop-control-visited">
             <input class="page-main__groop-input-visited" type="checkbox" name="bell-mountain" checked>
+            <span class="page-main__groop-mark-visited"></span>
             <span class="page-main__groop-text-visited">Гора-Колокол</span>
           </label>
           <label class="page-main__groop-control-visited">
             <input class="page-main__groop-input-visited" type="checkbox" name="slide-park" checked>
+            <span class="page-main__groop-mark-visited"></span>
             <span class="page-main__groop-text-visited">Слайд-парк</span>
           </label>
           <label class="page-main__groop-control-visited">
             <input class="page-main__groop-input-visited" type="checkbox" name="red-rocks">
+            <span class="page-main__groop-mark-visited"></span>
             <span class="page-main__groop-text-visited">Красные скалы</span>
           </label>
         </section>
@@ -114,23 +124,30 @@
           </label>
           <button class="page-main__groop-submit-emotions" type="submit">Отправить отзыв</button>
           <span class="page-main__groop-text-emotions">*-Обязательные поля</span>
-          <div class="page-main__groop-error">
-            <h2 class="page-main__groop-error-title">Что-то пошло не так!</h2>
-            <p class="page-main__groop-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
-              заполнить</p>
-            <button class="page-main__groop-error-button">Ок</button>
-          </div>
-          <div class="page-main__groop-fixed">
-            <h2 class="page-main__groop-fixed-title">Ваш отзыв отправлен!</h2>
-            <p class="page-main__groop-fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
-              время мы
-              опубликуем его на сайте.</p>
-            <button class="page-main__groop-fixed-button">Закрыть окно</button>
-          </div>
         </section>
       </form>
     </div>
   </main>
+
+  <section class="form-error">
+    <div class="form-error__groop-error">
+      <h2 class="form-error__groop-error-title">Что-то пошло не так!</h2>
+      <p class="form-error__groop-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+        заполнить</p>
+      <button class="form-error__groop-error-button">Ок</button>
+    </div>
+  </section>
+  <section class="form-fixed">
+    <div class="form-fixed__groop-fixed">
+      <h2 class="form-fixed__groop-fixed-title">Ваш отзыв отправлен!</h2>
+      <p class="form-fixed__groop-fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+        время мы
+        опубликуем его на сайте.</p>
+      <div class="form-fixed__groop-fixed-wallpaper">
+        <button class="form-fixed__groop-fixed-button">Закрыть окно</button>
+      </div>
+    </div>
+  </section>
 
   <footer class="page-footer">
     <h2 class="visually-hidden">Как с нами связаться</h2>
