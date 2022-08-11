@@ -5,7 +5,7 @@
   flex-direction: column;
   width: 320px;
   min-height: 158px;
-  background-image: url("../../img/back-desktop.jpg");
+  background-image: url("./img/back-desktop.jpg");
 }
 
 .page-catalog__foto-video {
@@ -27,7 +27,7 @@
   right: 0;
   top: -57px;
   margin: auto;
-  background-image: url("../../img/group.svg");
+  background-image: url("./img/group.svg");
 }
 
 .page-catalog__foto-video-title,
@@ -116,7 +116,7 @@
   height: 21px;
   position: absolute;
   content: "";
-  background-image: url("../../img/like-icon.svg");
+  background-image: url("./img/like-icon.svg");
   background-repeat: no-repeat;
   background-position: left;
 }

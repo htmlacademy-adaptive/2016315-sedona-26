@@ -13,47 +13,44 @@
   background-color: transparent;
 }
 
-.main-nav__wrapper {
-  display: none;
-}
-
 //Выпадающее меню
 
-//.main-nav__wrapper {
-//  position: relative;
-//  width: 320px;
-//  margin: 0 auto;
-//  text-align: center;
-//}
+.main-nav__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  //display: none;
+}
 
-//.main-nav__list {
-//  position: absolute;
-//  top: -43px;
-//  display: flex;
-//  flex-direction: column;
-//  width: 100%;
-//  min-height: 223px;
-//  list-style-type: none;
-//  padding: 0;
-//  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
-//}
+.main-nav__list {
+  position: absolute;
+  top: -43px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 223px;
+  list-style-type: none;
+  padding: 0;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-//.main-nav__list-item-link {
-//  display: flex;
-//  align-items: center;
-//  text-align: center;
-//  flex-direction: column;
-//  text-decoration: none;
-//  width: 100%;
-//  padding: 17px 80px 12px;
-//  color: #ffffff;
-//  border-top: 1px solid rgba(0, 0, 0, 0.25);
-//  background: #81b3d2;
-//  box-sizing: border-box;
-//  font-family: "PT Sans", "Arial", sans-serif;
-//  font-style: normal;
-//  font-weight: 700;
-//  font-size: 18px;
-//  line-height: 26px;
-//  text-transform: uppercase;
-//}//Выпадающее меню конец
+.main-nav__list-item-link {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  text-decoration: none;
+  width: 100%;
+  padding: 17px 80px 12px;
+  color: #ffffff;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  background: #81b3d2;
+  box-sizing: border-box;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}//Выпадающее меню конец

@@ -11,7 +11,7 @@
   right: 0;
   top: -78px;
   margin: auto;
-  background-image: url("../../img/group.svg");
+  background-image: url("./img/group.svg");
 }
 
 .advantages__welcome {
@@ -28,7 +28,7 @@
   top: 168px;
   bottom: 0;
   margin: auto;
-  background-image: url("../../img/white-copy.svg");
+  background-image: url("./img/white-copy.svg");
 }
 
 .advantages__title {
@@ -58,7 +58,7 @@
 .advantages__number {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   align-items: center;
@@ -86,9 +86,9 @@
   padding: 0;
 }
 
-.advantages__item-house,
-.advantages__item-burger,
-.advantages__item-gift {
+.advantages__item--house,
+.advantages__item--burger,
+.advantages__item--gift {
   position: relative;
   width: 240px;
 
@@ -106,7 +106,7 @@
   right: 0;
   left: -32px;
   margin-top: 37px;
-  background-image: url("../../img/icon-house.svg");
+  background-image: url("./img/icon-house.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -119,7 +119,7 @@
   right: 0;
   left: -32px;
   margin-top: 37px;
-  background-image: url("../../img/icon-burger.svg");
+  background-image: url("./img/icon-burger.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -132,7 +132,7 @@
   right: 0;
   left: -32px;
   margin-top: 37px;
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("./img/icon-gift.svg");
   background-repeat: no-repeat;
   background-position: left;
 }

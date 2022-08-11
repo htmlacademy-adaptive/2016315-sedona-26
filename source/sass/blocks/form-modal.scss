@@ -1,4 +1,4 @@
-.form-error {
+.form-modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -8,7 +8,7 @@
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.form-error__groop-error {
+.form-modal__groop {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,17 +22,17 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.form-error__groop-error-title {
+.form-error__groop-title {
   width: 237px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
 }
 
-.form-error__groop-error-text {
+.form-error__groop-text {
   width: 237px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -44,7 +44,18 @@
   color: #333333;
 }
 
-.form-error__groop-error-button {
+.form-modal__groop-fixed-wallpaper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  min-height: 98px;
+  box-sizing: border-box;
+  background: #f2f2f2;
+}
+
+.form-modal__groop-button {
   text-decoration: none;
   background: #81b3d2;
   border: none;
@@ -59,4 +70,8 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 3px;
+}
+
+.form-modal__groop-button--fixed {
+  width: 280px;
 }
