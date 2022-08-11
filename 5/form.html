@@ -48,7 +48,7 @@
     </section>
     <div class="page-main__wrapper">
       <form class="page-main__groop" action="https://echo.htmlacademy.ru" method="get">
-        <section class="page-main__groop-full-name">
+        <section class="page-main__groop-content page-main__groop-content--full-name">
           <h2 class="page-main__groop-title">Представьтесь</h2>
           <label class="page-main__groop-control">
             <span class="page-main__groop-text">Имя*:</span>
@@ -63,8 +63,8 @@
             <input class="page-main__groop-input" type="text" name="patronymic" value="Викторович" required>
           </label>
         </section>
-        <section class="page-main__groop-contact-info">
-          <h2 class="page-main__groop-title-info">Контактная информация</h2>
+        <section class="page-main__groop-content page-main__groop-content--contact-info">
+          <h2 class="page-main__groop-title">Контактная информация</h2>
           <label class="page-main__groop-control-info">
             <span class="page-main__groop-text-info">Контактный телефон*:</span>
             <input class="page-main__groop-input-info-phone" type="tel" name="phone" placeholder="Введите телефон"
@@ -76,8 +76,8 @@
               required>
           </label>
         </section>
-        <section class="page-main__groop-impression">
-          <h2 class="page-main__groop-title-impression">Ваше общее впечатление:</h2>
+        <section class="page-main__groop-content page-main__groop-content--impression">
+          <h2 class="page-main__groop-title">Ваше общее впечатление:</h2>
           <label class="page-main__groop-control-impression">
             <input class="page-main__groop-input-impression" type="radio" name="impression" value="positive">
             <span class="page-main__groop-mark-impression"></span>
@@ -94,8 +94,8 @@
             <span class="page-main__groop-text-impression">Затрудняюсь ответить</span>
           </label>
         </section>
-        <section class="page-main__groop-visited">
-          <h2 class="page-main__groop-title-visited">Посещенные достопримечательности:</h2>
+        <section class="page-main__groop-content page-main__groop-content--visited">
+          <h2 class="page-main__groop-title">Посещенные достопримечательности:</h2>
           <label class="page-main__groop-control-visited">
             <input class="page-main__groop-input-visited" type="checkbox" name="devil's-bridge" checked>
             <span class="page-main__groop-mark-visited"></span>
@@ -117,8 +117,8 @@
             <span class="page-main__groop-text-visited">Красные скалы</span>
           </label>
         </section>
-        <section class="page-main__groop-emotions">
-          <h2 class="page-main__groop-title-emotions">Опишите свои эмоции:</h2>
+        <section class="page-main__groop-content page-main__groop-content--emotions">
+          <h2 class="page-main__groop-title">Опишите свои эмоции:</h2>
           <label class="page-main__groop-control-emotions">
             <textarea class="page-main__groop-textarea-emotions" name="text" cols="30" rows="10"
               placeholder="Опишите подробно все свои восторги"></textarea>
@@ -130,22 +130,22 @@
     </div>
   </main>
 
-  <section class="form-error">
-    <div class="form-error__groop-error">
-      <h2 class="form-error__groop-error-title">Что-то пошло не так!</h2>
-      <p class="form-error__groop-error-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
+  <section class="form-modal form-modal--error">
+    <div class="form-modal__groop form-modal__groop--error">
+      <h2 class="form-modal__groop-title">Что-то пошло не так!</h2>
+      <p class="form-modal__groop-text">Проверьте поля, выделенные красным, скорее всего вы забыли их
         заполнить</p>
-      <button class="form-error__groop-error-button">Ок</button>
+      <button class="form-modal__groop-button">Ок</button>
     </div>
   </section>
-  <section class="form-fixed">
-    <div class="form-fixed__groop-fixed">
-      <h2 class="form-fixed__groop-fixed-title">Ваш отзыв отправлен!</h2>
-      <p class="form-fixed__groop-fixed-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
+  <section class="form-modal form-modal--fixed">
+    <div class="form-modal__groop form-modal__groop--fixed">
+      <h2 class="form-modal__groop-title">Ваш отзыв отправлен!</h2>
+      <p class="form-modal__groop-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее
         время мы
         опубликуем его на сайте.</p>
-      <div class="form-fixed__groop-fixed-wallpaper">
-        <button class="form-fixed__groop-fixed-button">Закрыть окно</button>
+      <div class="form-modal__groop-fixed-wallpaper">
+        <button class="form-modal__groop-button form-modal__groop-button--fixed">Закрыть окно</button>
       </div>
     </div>
   </section>
