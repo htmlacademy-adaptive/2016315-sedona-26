@@ -1,0 +1,55 @@
+.review {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 320px;
+  min-height: 158px;
+  background-image: url("./img/back-desktop.jpg");
+}
+
+.review__next {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.review__next::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 57px;
+  left: 0;
+  right: 0;
+  top: -57px;
+  margin: auto;
+  background-image: url("./img/group.svg");
+}
+
+.review__title {
+  width: 306px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.review__text {
+  width: 306px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}
