@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   position: relative;
   padding: 45px 42px 35px 41px;
@@ -22,7 +23,7 @@
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 
-.form-error__groop-title {
+.form-modal__groop-title {
   width: 237px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -32,7 +33,7 @@
   text-transform: uppercase;
 }
 
-.form-error__groop-text {
+.form-modal__groop-text {
   width: 237px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
