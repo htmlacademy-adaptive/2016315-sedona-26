@@ -8,6 +8,13 @@
   background-image: url("./img/back-desktop.jpg");
 }
 
+@media (min-width: 768px), (min-width: 1280px) {
+  .page-catalog__foto-video {
+    width: 458px;
+    margin: 0 auto;
+  }
+}
+
 .page-catalog__foto-video {
   position: relative;
   display: flex;
@@ -32,7 +39,6 @@
 
 .page-catalog__foto-video-title,
 .page-catalog__doubts-title {
-  width: 280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -43,9 +49,20 @@
   color: #000000;
 }
 
+@media (min-width: 768px) {
+  .page-catalog__doubts-text {
+    width: 445px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-catalog__doubts-text {
+    width: 445px;
+  }
+}
+
 .page-catalog__foto-video-text,
 .page-catalog__doubts-text {
-  width: 280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -67,11 +84,66 @@
   align-content: center;
 }
 
+@media (min-width: 768px), (min-width: 1280px) {
+  .page-catalog__gallery {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 648px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-catalog__product-block-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f2f2f2;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-catalog__product-wrapper-block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #eaeaea;
+  }
+}
+
 .page-catalog__product {
   position: relative;
   margin-top: 25px;
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 25px;
+
+  &--1 {
+    @media (min-width: 768px) {
+      width: 648px;
+      border-bottom: none;
+    }
+  }
+
+  &--2 {
+    @media (min-width: 768px) {
+      width: 324px;
+      border-bottom: none;
+    }
+  }
+
+  &--3 {
+    @media (min-width: 768px) {
+      width: 324px;
+      border-bottom: none;
+    }
+  }
+
+  &--4 {
+    @media (min-width: 768px) {
+      width: 324px;
+      border-bottom: none;
+    }
+  }
 }
 
 .page-catalog__product-title {
@@ -107,6 +179,10 @@
   line-height: 21px;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .page-catalog__product::after {
