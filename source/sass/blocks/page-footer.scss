@@ -4,6 +4,15 @@
   align-items: center;
 }
 
+@media (min-width: 768px), (min-width: 1280px) {
+  .page-footer__block-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 120px;
+  }
+}
+
 .page-footer__link-sedona {
   text-decoration: none;
   width: 166px;
@@ -30,6 +39,10 @@
   margin: 0;
   padding: 0;
   margin-bottom: 40px;
+
+  @media (min-width: 768px), (min-width: 1280px) {
+    margin-bottom: 0;
+  }
 }
 
 .page-footer__social-link {

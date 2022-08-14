@@ -1,5 +1,22 @@
 .advantages {
   position: relative;
+
+  .advatages__block-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px), (min-width: 1280px) {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }
+  }
+}
+
+@media (min-width: 768px), (min-width: 1280px) {
+  .advantages__item-block-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .advantages::after {
@@ -16,6 +33,11 @@
 
 .advantages__welcome {
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 520px;
+    margin: 0 auto;
+  }
 }
 
 .advantages__welcome::before {
@@ -84,6 +106,22 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: 768px), (min-width: 1280px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantage__wrapper-block {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    .advantages__item-color--revers {
+      order: 2;
+    }
+  }
 }
 
 .advantages__item--house,
