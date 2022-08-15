@@ -8,21 +8,20 @@
   background-image: url("./img/back-desktop.jpg");
 }
 
-@media (min-width: 768px), (min-width: 1280px) {
-  .page-catalog__foto-video {
-    width: 458px;
-    margin: 0 auto;
-  }
-}
-
 .page-catalog__foto-video {
   position: relative;
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-content: center;
   border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: 768px) {
+    width: 458px;
+  }
 }
 
 .page-catalog__foto-video::after {
@@ -49,20 +48,9 @@
   color: #000000;
 }
 
-@media (min-width: 768px) {
-  .page-catalog__doubts-text {
-    width: 445px;
-  }
-}
-
-@media (min-width: 768px) {
-  .page-catalog__doubts-text {
-    width: 445px;
-  }
-}
-
 .page-catalog__foto-video-text,
 .page-catalog__doubts-text {
+  width: 280px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -71,6 +59,12 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+@media (min-width: 768px) {
+  .page-catalog__doubts-text {
+    width: 445px;
+  }
 }
 
 .page-catalog__gallery,
@@ -84,12 +78,17 @@
   align-content: center;
 }
 
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
   .page-catalog__gallery {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: normal;
     margin: 0 auto;
     width: 648px;
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 }
 
@@ -100,13 +99,8 @@
     justify-content: space-between;
     background: #f2f2f2;
   }
-}
 
-@media (min-width: 768px) {
-  .page-catalog__product-wrapper-block {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  .page-catalog__product-block-wrapper--color {
     background: #eaeaea;
   }
 }
@@ -117,31 +111,25 @@
   border-bottom: 1px solid #e5e5e5;
   padding-bottom: 25px;
 
-  &--1 {
+  &--big-card {
     @media (min-width: 768px) {
       width: 648px;
       border-bottom: none;
     }
+
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
   }
 
-  &--2 {
+  &--card {
     @media (min-width: 768px) {
       width: 324px;
       border-bottom: none;
     }
-  }
 
-  &--3 {
-    @media (min-width: 768px) {
-      width: 324px;
-      border-bottom: none;
-    }
-  }
-
-  &--4 {
-    @media (min-width: 768px) {
-      width: 324px;
-      border-bottom: none;
+    @media (min-width: 1200px) {
+      width: 400px;
     }
   }
 }

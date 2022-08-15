@@ -1,16 +1,14 @@
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
   .page-main__groop-block-wrapper {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
   }
 }
 
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
   .page-main__groop-label-wrapper {
     display: flex;
-    width: 648px;
     flex-wrap: wrap;
   }
 }
@@ -32,6 +30,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 59px;
 }
 
 .page-main__groop-text,
@@ -72,6 +71,10 @@
   font-size: 18px;
   line-height: 26px;
   border: none;
+
+  @media (min-width: 1200px) {
+    width: 430px;
+  }
 }
 
 .page-main__groop-input-info-phone {
@@ -86,6 +89,10 @@
   line-height: 26px;
   background: #f2f2f2 url("./img/phone.svg") no-repeat right;
   border: none;
+
+  @media (min-width: 1200px) {
+    width: 430px;
+  }
 }
 
 .page-main__groop-input-info-phone::placeholder {
@@ -104,6 +111,10 @@
   line-height: 26px;
   background: #f2f2f2 url("./img/email.svg") no-repeat center right;
   border: none;
+
+  @media (min-width: 1200px) {
+    width: 430px;
+  }
 }
 
 .page-main__groop-input-info-email::placeholder {
@@ -177,7 +188,7 @@
 .page-main__groop-control-visited {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  padding-left: 6px;
   margin-bottom: 32px;
 }
 
@@ -232,12 +243,12 @@
   background: #f2f2f2;
   color: #000000;
 
-  @media (min-width: 768px), (min-width: 1280px) {
+  @media (min-width: 768px) {
     width: 648px;
   }
 }
 
-@media (min-width: 768px), (min-width: 1280px) {
+@media (min-width: 768px) {
   .page-main__groop-text-emotions-block-wrapper {
     display: flex;
     width: 648px;
