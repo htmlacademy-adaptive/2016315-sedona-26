@@ -85,11 +85,7 @@
     flex-wrap: wrap;
     justify-content: normal;
     margin: 0 auto;
-    width: 648px;
-
-    @media (min-width: 1200px) {
-      width: 1200px;
-    }
+    min-width: 648px;
   }
 }
 

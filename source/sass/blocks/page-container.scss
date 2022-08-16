@@ -2,36 +2,8 @@
 .page-container {
   margin: 0 auto;
   background: #ffffff;
-  padding: 0 20px;
-
-  @media (min-width: 768px) {
-    padding: 0 60px;
-  }
-
-  @media (min-width: 1200px) {
-    padding: 0 120px;
-    margin: 0 40px;
-  }
-}
-
-.page-container--index {
   padding: 0;
-
-  @media (min-width: 1200px) {
-    margin: 0 40px;
-  }
-}
-
-.page-container--catalog {
-  @media (min-width: 1200px) {
-    margin: 0 40px;
-    padding: 0;
-  }
-}
-
-.page-container--form {
-  @media (min-width: 1200px) {
-    margin: 0 40px;
-    padding: 0 120px;
-  }
+  min-width: 320px;
+  max-width: 1200px;
+  box-sizing: border-box;
 }
