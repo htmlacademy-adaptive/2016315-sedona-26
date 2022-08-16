@@ -12,9 +12,17 @@
     flex-wrap: wrap;
     min-height: 120px;
   }
+}
 
+.page-footer__block-wrapper--index {
+  @media (min-width: 768px) {
+    padding: 0 104px;
+  }
+}
+
+.page-footer__block-wrapper--catalog {
   @media (min-width: 1200px) {
-    padding: 0 104px 0 104px;
+    padding: 0 104px;
   }
 }
 

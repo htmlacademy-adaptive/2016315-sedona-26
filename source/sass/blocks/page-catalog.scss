@@ -76,6 +76,7 @@
   align-items: center;
   justify-content: center;
   align-content: center;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -113,12 +114,8 @@
 
   &--big-card {
     @media (min-width: 768px) {
-      width: 648px;
+      width: 100%;
       border-bottom: none;
-    }
-
-    @media (min-width: 1200px) {
-      width: 1200px;
     }
   }
 
