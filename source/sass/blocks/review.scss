@@ -5,17 +5,24 @@
   flex-direction: column;
   width: 320px;
   min-height: 158px;
+  margin: 0 auto;
   background-image: url("./img/back-desktop.jpg");
 }
 
 .review__next {
   position: relative;
+  width: 306px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   align-content: center;
   border-bottom: 1px solid #e5e5e5;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    width: 435px;
+  }
 }
 
 .review__next::after {
@@ -31,7 +38,6 @@
 }
 
 .review__title {
-  width: 306px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -43,7 +49,6 @@
 }
 
 .review__text {
-  width: 306px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

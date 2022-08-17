@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .main-nav__button {
@@ -11,13 +12,17 @@
   margin: auto 0;
   border: none;
   background-color: transparent;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 //Выпадающее меню
 
 .main-nav__wrapper {
   position: relative;
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   //display: none;
@@ -33,6 +38,47 @@
   list-style-type: none;
   padding: 0;
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+
+  @media (min-width: 768px) {
+    position: static;
+    flex-direction: row;
+    min-height: 56px;
+    margin: 0;
+    filter: none;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "a b . c d";
+  }
+}
+
+.main-nav__list-item {
+  &--1 {
+    @media (min-width: 768px) {
+      grid-area: a;
+    }
+  }
+
+  &--2 {
+    @media (min-width: 768px) {
+      grid-area: b;
+    }
+  }
+
+  &--3 {
+    @media (min-width: 768px) {
+      grid-area: c;
+    }
+  }
+
+  &--4 {
+    @media (min-width: 768px) {
+      grid-area: d;
+    }
+  }
 }
 
 .main-nav__list-item-link {
@@ -53,4 +99,11 @@
   font-size: 18px;
   line-height: 26px;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    padding: 17px 5px;
+    color: #000000;
+    border-top: none;
+    background: none;
+  }
 }//Выпадающее меню конец

@@ -1,9 +1,32 @@
+@media (min-width: 768px) {
+  .page-main__groop-block-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__groop-label-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .page-main__groop-content {
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 24px 20px 39px;
+}
+
+.page-main__groop-content--full-name,
+.page-main__groop-content--contact-info {
+  @media (min-width: 1200px) {
+    width: 45%;
+  }
 }
 
 .page-main__groop-title {
@@ -15,6 +38,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 59px;
 }
 
 .page-main__groop-text,
@@ -34,7 +58,7 @@
 .page-main__groop-text-impression,
 .page-main__groop-text-visited {
   width: 218px;
-  padding-left: 66px;
+  padding-left: 55px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -43,8 +67,13 @@
   color: #000000;
 }
 
+.page-main__groop-control,
+.page-main__groop-control-info {
+  width: 100%;
+}
+
 .page-main__groop-input {
-  width: 280px;
+  width: 100%;
   padding: 16px;
   box-sizing: border-box;
   background: #f2f2f2;
@@ -54,10 +83,15 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
+  border: none;
+
+  @media (min-width: 1200px) {
+    width: 430px;
+  }
 }
 
 .page-main__groop-input-info-phone {
-  width: 280px;
+  width: 100%;
   padding: 16px 73px 16px 16px;
   box-sizing: border-box;
   color: #000000;
@@ -67,6 +101,7 @@
   font-size: 18px;
   line-height: 26px;
   background: #f2f2f2 url("./img/phone.svg") no-repeat right;
+  border: none;
 }
 
 .page-main__groop-input-info-phone::placeholder {
@@ -74,7 +109,7 @@
 }
 
 .page-main__groop-input-info-email {
-  width: 280px;
+  width: 100%;
   padding: 16px 73px 16px 16px;
   box-sizing: border-box;
   color: #000000;
@@ -84,6 +119,7 @@
   font-size: 18px;
   line-height: 26px;
   background: #f2f2f2 url("./img/email.svg") no-repeat center right;
+  border: none;
 }
 
 .page-main__groop-input-info-email::placeholder {
@@ -103,7 +139,6 @@
 .page-main__groop-control-impression {
   display: flex;
   align-items: center;
-  padding-left: 20px;
   margin-bottom: 32px;
 }
 
@@ -157,7 +192,7 @@
 .page-main__groop-control-visited {
   display: flex;
   align-items: center;
-  padding-left: 20px;
+  width: 210px;
   margin-bottom: 32px;
 }
 
@@ -199,8 +234,12 @@
 
 //checkbox конец
 
+.page-main__groop-control-emotions {
+  width: 100%;
+}
+
 .page-main__groop-textarea-emotions {
-  width: 279px;
+  width: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -210,7 +249,16 @@
   padding: 16px;
   min-height: 150px;
   background: #f2f2f2;
-  color: rgba(0, 0, 0, 0.3);
+  color: #000000;
+}
+
+@media (min-width: 768px) {
+  .page-main__groop-text-emotions-block-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 .page-main__groop-submit-emotions {
