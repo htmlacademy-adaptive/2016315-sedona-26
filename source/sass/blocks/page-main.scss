@@ -13,6 +13,32 @@
   }
 }
 
+.page-main__groop-line {
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .page-main__groop-line::before {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 18%;
+    left: 76%;
+    background-color: #dbdbdb;
+  }
+
+  .page-main__groop-line::after {
+    position: absolute;
+    content: "";
+    width: 16%;
+    height: 1px;
+    top: 18%;
+    right: 76%;
+    background-color: #dbdbdb;
+  }
+}
+
 .page-main__groop-content {
   display: flex;
   width: 100%;
@@ -21,12 +47,22 @@
   border-bottom: 1px solid #e5e5e5;
   padding: 24px 20px 39px;
   box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    border-bottom: none;
+  }
 }
 
 .page-main__groop-content--full-name,
 .page-main__groop-content--contact-info {
-  @media (min-width: 1200px) {
+  @media (min-width: 768px) {
     width: 45%;
+  }
+}
+
+.page-main__groop-content--full-name {
+  @media (min-width: 768px) {
+    border-right: 1px solid #dbdbdb;
   }
 }
 
@@ -101,7 +137,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  background: #f2f2f2 url("./img/phone.svg") no-repeat right;
+  background: #f2f2f2 url("../img/phone.svg") no-repeat right;
   border: none;
 }
 
@@ -119,7 +155,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  background: #f2f2f2 url("./img/email.svg") no-repeat center right;
+  background: #f2f2f2 url("../img/email.svg") no-repeat center right;
   border: none;
 }
 
@@ -152,7 +188,7 @@
 }
 
 .page-main__groop-input-impression:checked + .page-main__groop-mark-impression {
-  background-image: url("./img/radio-click.svg");
+  background-image: url("../img/radio-click.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -163,7 +199,7 @@
 
 .page-main__groop-input-impression:checked:focus + .page-main__groop-mark-impression {
   background: #e5e5e5;
-  background-image: url("./img/radio-click.svg");
+  background-image: url("../img/radio-click.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -174,7 +210,7 @@
 
 .page-main__groop-input-impression:checked:disabled + .page-main__groop-mark-impression {
   background: #d5d5d5;
-  background-image: url("./img/radio-click-off.svg");
+  background-image: url("../img/radio-click-off.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -206,7 +242,7 @@
 }
 
 .page-main__groop-input-visited:checked + .page-main__groop-mark-visited {
-  background-image: url("./img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -217,7 +253,7 @@
 
 .page-main__groop-input-visited:checked:focus + .page-main__groop-mark-visited {
   background: #e5e5e5;
-  background-image: url("./img/tick.svg");
+  background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -228,7 +264,7 @@
 
 .page-main__groop-input-visited:checked:disabled + .page-main__groop-mark-visited {
   background: #d5d5d5;
-  background-image: url("./img/tick-disabled.svg");
+  background-image: url("../img/tick-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -251,6 +287,7 @@
   min-height: 150px;
   background: #f2f2f2;
   color: #000000;
+  resize: vertical;
 }
 
 @media (min-width: 768px) {
