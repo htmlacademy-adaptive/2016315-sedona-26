@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   width: 100%;
+  max-height: 220px;
 }
 
 .main-nav__button {
@@ -27,9 +28,9 @@
 
 //бургер
 
-.main-nav__image-open {
-  display: none;
-}
+//.main-nav__image-open {
+//  display: none;
+//}
 
 //Выпадающее меню
 
@@ -123,3 +124,18 @@
     line-height: 21px;
   }
 }//Выпадающее меню конец
+
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__wrapper .main-nav__list .main-nav__list-item-link {
+    display: none;
+  }
+
+  .main-nav__image-close {
+    display: none;
+  }
+}
+
+
+//.main-nav--nojs .main-nav__list {
+//  position: initial;
+//}

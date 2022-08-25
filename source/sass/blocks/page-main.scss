@@ -6,35 +6,46 @@
   }
 }
 
-@media (min-width: 768px) {
-  .page-main__groop-label-wrapper {
-    display: flex;
-    flex-wrap: wrap;
+.page-main__groop-label-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    justify-content: flex-start;
   }
 }
 
-.page-main__groop-line {
-  position: relative;
+.page-main__groop-label-wrapper--impression {
+  @media (max-width: 1199px) {
+    max-width: 560px;
+    justify-content: flex-start;
+  }
 }
 
 @media (min-width: 768px) {
+  .page-main__groop-line {
+    position: relative;
+    width: 39%;
+  }
+
   .page-main__groop-line::before {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 50%;
     height: 1px;
-    top: 18%;
-    left: 76%;
+    top: 50%;
+    left: 115%;
     background-color: #dbdbdb;
   }
 
   .page-main__groop-line::after {
     position: absolute;
     content: "";
-    width: 16%;
+    width: 50%;
     height: 1px;
-    top: 18%;
-    right: 76%;
+    top: 50%;
+    right: 115%;
     background-color: #dbdbdb;
   }
 }
@@ -50,6 +61,7 @@
 
   @media (min-width: 768px) {
     border-bottom: none;
+    padding: 24px 60px 39px;
   }
 }
 
@@ -75,7 +87,7 @@
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
-  margin-bottom: 59px;
+  margin: 24px auto;
 }
 
 .page-main__groop-text,
@@ -94,7 +106,7 @@
 
 .page-main__groop-text-impression,
 .page-main__groop-text-visited {
-  width: 218px;
+  width: 187px;
   padding-left: 55px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -177,6 +189,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 32px;
+  width: 280px;
 }
 
 .page-main__groop-mark-impression {
@@ -229,7 +242,7 @@
 .page-main__groop-control-visited {
   display: flex;
   align-items: center;
-  width: 210px;
+  width: 245px;
   margin-bottom: 32px;
 }
 
@@ -273,6 +286,8 @@
 
 .page-main__groop-control-emotions {
   width: 100%;
+  margin-bottom: 56px;
+  text-align: center;
 }
 
 .page-main__groop-textarea-emotions {
@@ -284,18 +299,25 @@
   line-height: 26px;
   box-sizing: border-box;
   padding: 16px;
-  min-height: 150px;
   background: #f2f2f2;
   color: #000000;
   resize: vertical;
+  border: none;
+
+  @media (min-width: 768px) {
+    min-height: 160px;
+    max-width: 768px;
+  }
 }
 
 @media (min-width: 768px) {
   .page-main__groop-text-emotions-block-wrapper {
     display: flex;
     align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 768px;
   }
 }
 
@@ -317,8 +339,8 @@
 }
 
 .page-main__groop-text-emotions {
-  width: 137px;
-  margin-left: 166px;
+  text-align: end;
+  display: block;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

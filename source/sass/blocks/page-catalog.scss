@@ -5,6 +5,8 @@
   flex-direction: column;
   min-height: 158px;
   background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-catalog__foto-video {
@@ -15,7 +17,10 @@
   align-items: center;
   justify-content: center;
   align-content: center;
-  border-bottom: 1px solid #e5e5e5;
+
+  @media (max-width: 767px) {
+    border-bottom: 1px solid #e5e5e5;
+  }
 }
 
 .page-catalog__foto-video::after {
@@ -25,7 +30,7 @@
   height: 57px;
   left: 0;
   right: 0;
-  top: -57px;
+  top: -56px;
   margin: auto;
   background-image: url("../img/intro-triangle.svg");
   background-position: center;

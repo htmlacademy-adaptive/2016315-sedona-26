@@ -3,10 +3,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 320px;
   min-height: 158px;
   margin: 0 auto;
   background-image: url("../img/back-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .review__next {
