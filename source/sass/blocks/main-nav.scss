@@ -14,25 +14,7 @@
   background-color: transparent;
   cursor: pointer;
   z-index: 2;
-
-  @media (min-width: 768px) {
-    display: none;
-  }
 }
-
-//крестик
-
-//.main-nav__image-close {
-//  display: none;
-//}
-
-//бургер
-
-//.main-nav__image-open {
-//  display: none;
-//}
-
-//Выпадающее меню
 
 .main-nav__wrapper {
   position: relative;
@@ -40,7 +22,7 @@
   margin: 0 auto;
   text-align: center;
   z-index: 1;
-  //display: none;
+  display: block;
 }
 
 .main-nav__list {
@@ -123,19 +105,24 @@
     font-size: 14px;
     line-height: 21px;
   }
-}//Выпадающее меню конец
-
-@media (max-width: 767px) {
-  .main-nav--closed .main-nav__wrapper .main-nav__list .main-nav__list-item-link {
-    display: none;
-  }
-
-  .main-nav__image-close {
-    display: none;
-  }
 }
 
+.main-nav--closed .main-nav__wrapper {
+  display: none;
+}
 
-//.main-nav--nojs .main-nav__list {
-//  position: initial;
-//}
+.main-nav__image-open {
+  display: none;
+}
+
+.main-nav__image-close {
+  display: block;
+}
+
+.main-nav--closed .main-nav__image-open {
+  display: block;
+}
+
+.main-nav--closed .main-nav__image-close {
+  display: none;
+}
