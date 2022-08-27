@@ -14,28 +14,34 @@
       <a class="main-header__logo">
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
       </a>
-      <nav class="main-nav">
-        <button class="main-nav__button">
-          <svg class="main-nav__image" width="23" height="22" viewBox="0 0 23 22" fill="none"
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__image-open" width="23" height="22" viewBox="0 0 23 22" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path d="M22.9 0H0V4H22.9V0Z" fill="#81B3D2" />
             <path d="M22.9 9H0V13H22.9V9Z" fill="#81B3D2" />
             <path d="M22.9 18H0V22H22.9V18Z" fill="#81B3D2" />
           </svg>
+          <svg class="main-nav__image-close" width=23" height="23" viewBox="0 0 23 23" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M22.2 2.8L19.4 0L11.1 8.3L2.8 0L0 2.8L8.3 11.1L0 19.4L2.8 22.2L11.1 13.9L19.4 22.2L22.2 19.4L13.9 11.1L22.2 2.8Z"
+              fill="white" />
+          </svg>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item main-nav__list-item--1">
-              <a class="main-nav__list-item-link">Главная</a>
+              <a class="main-nav__link">Главная</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--2">
-              <a class="main-nav__list-item-link" href="catalog.html">Фото и видео</a>
+              <a class="main-nav__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--3">
-              <a class="main-nav__list-item-link" href="form.html">Форма отзыва</a>
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__list-item main-nav__list-item--4">
-              <a class="main-nav__list-item-link" href="https://htmlacademy.ru">Html academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
             </li>
           </ul>
         </div>
@@ -64,17 +70,61 @@
         </div>
         <ol class="advantages__list">
           <li class="advantages__item advantages__item--house">
-            <span class="advantages__icon-house"></span>
+            <svg class="advantages__icon" width="75" height="72" viewBox="0 0 75 72" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M29.6185 64.9389H45.6827V41.1709H29.6185V64.9389ZM42.7711 62.0549H32.5301V44.0549H42.6707V62.0549H42.7711Z"
+                fill="#81B3D2" />
+              <path
+                d="M72.8916 39.1823L75 37.0939L65.0602 27.2486V0.39779H51.2048V13.5249L37.4498 0L0 37.1934L2.10843 39.2818L9.93976 31.5249V69.116H6.0241V72H70.1807V69.116H65.0602V31.4254L72.8916 39.1823ZM54.1165 3.38122H62.0482V24.3646L54.1165 16.5083V3.38122ZM62.1486 69.0166H12.9518V28.5414L37.4498 4.1768L62.0482 28.5414V69.0166H62.1486Z"
+                fill="#81B3D2" />
+              <path
+                d="M29.9197 27.0491C29.9197 31.3253 33.4338 34.806 37.6507 34.806C41.9679 34.806 45.482 31.3253 45.482 27.0491C45.482 22.7728 41.9679 19.3916 37.6507 19.3916C33.3334 19.3916 29.9197 22.7728 29.9197 27.0491ZM37.6507 22.0767C40.3615 22.0767 42.6707 24.2645 42.6707 27.0491C42.6707 29.7341 40.4619 32.0214 37.6507 32.0214C34.9398 32.0214 32.6306 29.8336 32.6306 27.0491C32.6306 24.364 34.9398 22.0767 37.6507 22.0767Z"
+                fill="#81B3D2" />
+              <path d="M19.9799 41.1709H16.9679V45.0493H19.9799V41.1709Z" fill="#81B3D2" />
+              <path d="M25.9036 41.1709H22.8915V45.0493H25.9036V41.1709Z" fill="#81B3D2" />
+              <path d="M19.9799 47.1387H16.9679V51.0171H19.9799V47.1387Z" fill="#81B3D2" />
+              <path d="M25.9036 47.1387H22.8915V51.0171H25.9036V47.1387Z" fill="#81B3D2" />
+              <path d="M52.008 41.1709H48.996V45.0493H52.008V41.1709Z" fill="#81B3D2" />
+              <path d="M58.0321 41.1709H55.0201V45.0493H58.0321V41.1709Z" fill="#81B3D2" />
+              <path d="M52.008 47.1387H48.996V51.0171H52.008V47.1387Z" fill="#81B3D2" />
+              <path d="M58.0321 47.1387H55.0201V51.0171H58.0321V47.1387Z" fill="#81B3D2" />
+            </svg>
             <h4 class="advantages__title">Жилье</h4>
             <p class="advantages__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="advantages__item advantages__item--burger">
-            <span class="advantages__icon-burger"></span>
+            <svg class="advantages__icon" width="77" height="69" viewBox="0 0 77 69" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M71.9 46H4.3C1.9 46 0 48 0 50.3V53.8C0 56.1 1.9 58 4.3 58H5.3V59C5.3 64.5 9.8 68.9 15.2 68.9H61C66.5 68.9 70.9 64.4 70.9 59V58H71.9C74.2 58 76.2 56.1 76.2 53.7V50.2C76.2 48 74.3 46 71.9 46ZM68 59C68 62.8 64.9 65.9 61.1 65.9H15.1C11.3 65.9 8.2 62.8 8.2 59V58H68V59ZM73.2 53.7C73.2 54.4 72.6 55 71.9 55H4.3C3.6 55 3 54.4 3 53.7V50.2C3 49.6 3.6 49 4.3 49H72C72.7 49 73.3 49.6 73.3 50.3V53.7H73.2Z"
+                fill="#81B3D2" />
+              <path
+                d="M16.2 37.9L21.6 41.9L27.1 37.9L32.6 41.9L38.1 37.9L43.5 41.9L49 37.9L54.5 41.9L60 37.9L65.5 41.9L71.8 37.2L70.1 34.8L65.5 38.1L60 34.1L54.5 38.1L49 34.1L43.5 38.1L38.1 34.1L32.6 38.1L27.1 34.1L21.6 38.1L16.2 34.1L10.7 38.1L6.10005 34.8L4.30005 37.2L10.7 41.9L16.2 37.9Z"
+                fill="#81B3D2" />
+              <path
+                d="M70.9 31.1C70.9 30.5 71 28.5 70.9 28.1C70.2 12.5 55.7999 0 38.0999 0C20.3999 0 5.89995 12.5 5.19995 28.1C5.19995 28.5 5.19995 30.5 5.19995 31.1H70.9ZM38.0999 3C54.0999 3 67.3 14.2 67.9 28.1H8.19995C8.89995 14.2 22.0999 3 38.0999 3Z"
+                fill="#81B3D2" />
+              <path
+                d="M38.1 17C39.2045 17 40.1 16.1046 40.1 15C40.1 13.8954 39.2045 13 38.1 13C36.9954 13 36.1 13.8954 36.1 15C36.1 16.1046 36.9954 17 38.1 17Z"
+                fill="#81B3D2" />
+              <path
+                d="M30.1 12.1C31.2045 12.1 32.1 11.2045 32.1 10.1C32.1 8.99541 31.2045 8.09998 30.1 8.09998C28.9954 8.09998 28.1 8.99541 28.1 10.1C28.1 11.2045 28.9954 12.1 30.1 12.1Z"
+                fill="#81B3D2" />
+              <path
+                d="M46.1 12.1C47.2045 12.1 48.1 11.2045 48.1 10.1C48.1 8.99541 47.2045 8.09998 46.1 8.09998C44.9954 8.09998 44.1 8.99541 44.1 10.1C44.1 11.2045 44.9954 12.1 46.1 12.1Z"
+                fill="#81B3D2" />
+            </svg>
             <h4 class="advantages__title">Еда</h4>
             <p class="advantages__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="advantages__item advantages__item--gift">
-            <span class="advantages__icon-gift"></span>
+            <svg class="advantages__icon" width="63" height="76" viewBox="0 0 63 76" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M60.2 22.1237H60.1H35.8C49.4 15.3237 50.5 11.0237 50 8.62371C48.9 4.72371 44.4 1.72371 40.2 3.32371C34.7 5.42371 33.2 13.6237 31.7 19.5237C29.8 13.5237 28 5.92371 23.7 2.02371C22.5 0.923705 20.7 -0.176294 18 0.0237057C14 0.423706 8.3 5.32371 10.7 10.8237C12.9 16.1237 20.2 19.5237 25.1 22.2237H2.8C1.2 22.2237 0 23.5237 0 25.0237V36.2237C0 37.8237 1.3 39.0237 2.8 39.0237H3.1V75.0237H60.1V39.0237H60.2C61.8 39.0237 63 37.7237 63 36.2237V25.0237C63 23.4237 61.7 22.1237 60.2 22.1237ZM41.8 5.82371C43.9 5.52371 46.7 7.12371 47 9.02371C47.4 11.7237 43.7 14.2237 42 15.3237C39.5 17.0237 37.1 17.9237 34.8 19.3237C35.6 15.6237 37.3 6.42371 41.8 5.82371ZM19.2 15.6237C17 14.1237 12.8 11.2237 12.9 7.92371C13 4.32371 18.6 1.42371 21.6 4.12371C25.4 7.42371 27.2 15.1237 28.6 20.5237C25.4 18.9237 22.4 17.7237 19.2 15.6237ZM25.1 72.0237H6V39.0237H25.1V72.0237ZM25.1 36.0237H3V25.1237H25.1V36.0237ZM35.1 72.0237H28V25.1237H35.1V72.0237ZM57.1 72.0237H38.1V39.0237H57.2V72.0237H57.1ZM60 36.0237H38.1V25.1237H60V36.0237Z"
+                fill="#81B3D2" />
+            </svg>
             <h4 class="advantages__title">Сувениры</h4>
             <p class="advantages__text">Не только китайского, но и местного производства!</p>
           </li>
@@ -117,8 +167,11 @@
 
     <footer class="page-footer">
       <section class="page-footer__maps">
-        <h2 class="visually-hidden">Карта</h2>
-        <img src="img/map-mobile.jpg" alt="Место нахождения седоны на карте." width="320" height="350">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <iframe class="page-footer__maps-city"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1670818.4414414638!2d-112.00923409212734!3d35.12375535368844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1661179187039!5m2!1sru!2sru"
+          width="1200" height="350" allowfullscreen title="Город на карте">
+        </iframe>
       </section>
 
       <div class="page-footer__block-wrapper">
@@ -166,7 +219,7 @@
       </div>
     </footer>
   </div>
-
+  <script src="js/scripts.js" defer></script>
 </body>
 
 </html>
