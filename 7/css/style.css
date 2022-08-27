@@ -99,6 +99,11 @@ body {
   cursor: pointer;
   z-index: 2;
 }
+@media (min-width: 768px) {
+  .main-nav__button {
+    display: none;
+  }
+}
 
 .main-nav__wrapper {
   position: relative;
@@ -158,7 +163,7 @@ body {
   }
 }
 
-.main-nav__list-item-link {
+.main-nav__link {
   display: flex;
   align-items: center;
   text-align: center;
@@ -178,7 +183,7 @@ body {
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
-  .main-nav__list-item-link {
+  .main-nav__link {
     padding: 17px 5px;
     color: #000000;
     border-top: none;
@@ -188,26 +193,27 @@ body {
   }
 }
 
-.main-nav--closed .main-nav__wrapper {
-  display: none;
-}
+@media (max-width: 767px) {
+  .main-nav--closed .main-nav__wrapper {
+    display: none;
+  }
 
-.main-nav__image-open {
-  display: none;
-}
+  .main-nav__image-open {
+    display: none;
+  }
 
-.main-nav__image-close {
-  display: block;
-}
+  .main-nav__image-close {
+    display: block;
+  }
 
-.main-nav--closed .main-nav__image-open {
-  display: block;
-}
+  .main-nav--closed .main-nav__image-open {
+    display: block;
+  }
 
-.main-nav--closed .main-nav__image-close {
-  display: none;
+  .main-nav--closed .main-nav__image-close {
+    display: none;
+  }
 }
-
 .welcome {
   background: url("../img/back-mobile.jpg") no-repeat center;
   text-align: center;
@@ -232,12 +238,16 @@ body {
   }
 }
 
+.advantages__item-block-wrapper {
+  background: #eeeeee;
+}
 @media (min-width: 768px) {
   .advantages__item-block-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 .advantages::after {
   position: absolute;
   content: "";
@@ -457,6 +467,11 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .interested__title {
+    font-size: 30px;
+  }
+}
 
 .interested__text {
   font-family: "PT Sans", "Arial", sans-serif;
@@ -589,7 +604,7 @@ body {
 
 .review__next {
   position: relative;
-  width: 306px;
+  padding: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1119,6 +1134,12 @@ body {
   text-transform: uppercase;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .page-catalog__foto-video-title,
+.page-catalog__doubts-title {
+    font-size: 30px;
+  }
+}
 
 .page-catalog__foto-video-text,
 .page-catalog__doubts-text {
@@ -1203,6 +1224,11 @@ body {
   }
 }
 
+@media (min-width: 768px) {
+  .page-catalog__product-wrapper-text {
+    padding-left: 20px;
+  }
+}
 .page-catalog__product-title {
   margin-bottom: 0;
   font-family: "PT Sans", "Arial", sans-serif;
