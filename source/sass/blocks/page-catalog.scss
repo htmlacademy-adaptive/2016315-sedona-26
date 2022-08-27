@@ -46,6 +46,10 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
 .page-catalog__foto-video-text,
@@ -133,6 +137,12 @@
     @media (min-width: 1200px) {
       width: 33.33%;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .page-catalog__product-wrapper-text {
+    padding-left: 20px;
   }
 }
 

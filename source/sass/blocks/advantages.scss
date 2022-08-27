@@ -12,12 +12,15 @@
   }
 }
 
-@media (min-width: 768px) {
-  .advantages__item-block-wrapper {
+.advantages__item-block-wrapper {
+  background: #eeeeee;
+
+  @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 
 .advantages::after {
   position: absolute;
