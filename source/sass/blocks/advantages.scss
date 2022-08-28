@@ -33,6 +33,10 @@
   margin: auto;
   background-image: url("../img/intro-triangle.svg");
   background-position: center;
+
+  @media (min-width: 768px) {
+    top: -78px;
+  }
 }
 
 .advantages__welcome {

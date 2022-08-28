@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Главная страница Седона</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
 </head>
 
 <body class="page__body">
@@ -51,7 +54,12 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="visually-hidden">Седона в Аризоне</h1>
-        <img class="welcome__image" src="img/text-index.png" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350">
+          <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350">
+          <img class="welcome__image" src="img/text-index.svg" width="282" height="214"
+            alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <section class="advantages">
         <div class="advantages__welcome">
@@ -65,7 +73,11 @@
             <p class="advantages__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
           <div class="advantages__wrapper-image">
-            <img class="advantages__image" src="img/photo-city.jpg" alt="Город Седоны.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg">
+              <img class="advantages__image" src="img/photo-city.jpg" alt="Город Седоны.">
+            </picture>
           </div>
         </div>
         <ol class="advantages__list">
@@ -136,7 +148,11 @@
             <p class="advantages__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
           <div class="advantages__wrapper-image">
-            <img class="advantages__image" src="img/photo-bridge.jpg" alt="Мост дьявола.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg">
+              <img class="advantages__image" src="img/photo-bridge.jpg" alt="Мост дьявола.">
+            </picture>
           </div>
         </div>
         <div class="advantages__item-block-wrapper">

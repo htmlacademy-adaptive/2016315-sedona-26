@@ -5,9 +5,23 @@
   flex-direction: column;
   min-height: 158px;
   margin: 0 auto;
-  background-image: url("../img/back-desktop.jpg");
+  background-image: url("../img/back-form-mobile.jpg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (min-width: 768px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet.jpg");
+      background-size: 768px auto;
+      min-height: 290px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/back-desktop.jpg");
+    background-size: cover;
+    min-height: 301px;
+  }
 }
 
 .review__next {

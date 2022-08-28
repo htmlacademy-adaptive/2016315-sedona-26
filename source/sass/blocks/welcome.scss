@@ -2,6 +2,17 @@
   background: url("../img/back-mobile.jpg") no-repeat center;
   text-align: center;
 
+  @media (min-width: 768px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop.jpg");
+      background-size: 768px auto;
+    }
+  }
+
+  @media (min-width: 768px) {
+    background-size: cover;
+  }
+
   .welcome__image {
     display: block;
     padding: 90px 19px 85px;

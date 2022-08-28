@@ -6,6 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог Седона</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
 </head>
 
 <body class="page__body">
@@ -61,8 +64,13 @@
       <section class="page-catalog__gallery">
         <h2 class="visually-hidden">Галлерея</h2>
         <article class="page-catalog__product page-catalog__product--big-card">
-          <a href="img/non-native-spaces.jpg"><img class="product__image" src="img/non-native-spaces.jpg"
-              alt="Вид дороги в закат." width="280" height="280">
+          <a href="img/non-native-spaces.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg">
+              <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg" alt="Вид дороги в закат."
+                width="280" height="280">
+            </picture>
           </a>
           <div class="page-catalog__product-block-wrapper">
             <div class="page-catalog__product-wrapper-text">
@@ -80,8 +88,13 @@
           </div>
         </article>
         <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/native-vegetation.jpg"><img class="product__image" src="img/native-vegetation.jpg"
-              alt="Растение." width="280" height="280">
+          <a href="img/native-vegetation.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/native-vegetation-tablet.jpg">
+              <img class="page-catalog__product__image" src="img/native-vegetation.jpg" alt="Растение." width="280"
+                height="280">
+            </picture>
           </a>
           <div class="page-catalog__product-block-wrapper">
             <div class="page-catalog__product-wrapper-text">
@@ -99,8 +112,13 @@
           </div>
         </article>
         <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/road-north.jpg"><img class="product__image" src="img/road-north.jpg" alt="Дорога в горах."
-              width="280" height="280">
+          <a href="img/road-north.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/road-north-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/road-north-tablet.jpg">
+              <img class="page-catalog__product__image" src="img/road-north.jpg" alt="Дорога в горах." width="280"
+                height="280">
+            </picture>
           </a>
           <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
             <div class="page-catalog__product-wrapper-text">
@@ -118,8 +136,13 @@
           </div>
         </article>
         <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/devil's-bridge.jpg"><img class="product__image" src="img/devil's-bridge.jpg" alt="Горный мост."
-              width="280" height="280">
+          <a href="img/photo-bridge.jpg">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg">
+              <img class="page-catalog__product__image" src="img/photo-bridge.jpg" alt="Горный мост." width="280"
+                height="280">
+            </picture>
           </a>
           <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
             <div class="page-catalog__product-wrapper-text">
