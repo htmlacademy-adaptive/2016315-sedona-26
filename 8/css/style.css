@@ -215,9 +215,8 @@ body {
   }
 }
 .welcome {
-  background: url("../img/back.jpg") no-repeat center;
-  text-align: center;
-  background-color: #000000;
+  background: url("../img/back.jpg") no-repeat bottom;
+  background-color: #5f3205;
   background-size: cover;
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
@@ -227,7 +226,8 @@ body {
 }
 @media (min-width: 768px) {
   .welcome {
-    background: url("../img/back-tablet.jpg") no-repeat center;
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
@@ -237,7 +237,8 @@ body {
 }
 @media (min-width: 1200px) {
   .welcome {
-    background: url("../img/back-desktop.jpg") no-repeat center;
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
@@ -538,6 +539,7 @@ body {
 .page-footer__maps-city {
   border: none;
   display: block;
+  width: 100%;
 }
 
 .page-footer__block-wrapper {
@@ -632,11 +634,9 @@ body {
   flex-direction: column;
   min-height: 158px;
   margin: 0 auto;
-  background-image: url("../img/back-form.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/back-form.jpg") no-repeat bottom;
   background-size: cover;
-  background-color: #000000;
+  background-color: #5f3205;
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .review {
@@ -645,24 +645,28 @@ body {
 }
 @media (min-width: 768px) {
   .review {
-    background: url("../img/back-tablet.jpg") no-repeat center;
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 290px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .review {
     background-image: url("../img/retina/back-form-tablet@2.jpg");
+    background-size: cover;
   }
 }
 @media (min-width: 1200px) {
   .review {
-    background: url("../img/back-desktop.jpg") no-repeat center;
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 301px;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .review {
     background-image: url("../img/retina/back-form-desktop@2.jpg");
+    background-size: cover;
   }
 }
 
@@ -1154,11 +1158,10 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 158px;
-  background-image: url("../img/back-form-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/back-form-mobile.jpg") no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-position: bottom;
+  background-color: #5f3205;
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
   .page-catalog__review {
@@ -1167,24 +1170,28 @@ body {
 }
 @media (min-width: 768px) {
   .page-catalog__review {
-    background: url("../img/back-tablet.jpg") no-repeat center;
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 290px;
   }
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .page-catalog__review {
     background-image: url("../img/retina/back-tablet@2.jpg");
+    background-size: cover;
   }
 }
 @media (min-width: 1200px) {
   .page-catalog__review {
-    background: url("../img/back-desktop.jpg") no-repeat center;
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 301px;
   }
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .page-catalog__review {
     background-image: url("../img/retina/back-desktop@2.jpg");
+    background-size: cover;
   }
 }
 
@@ -1436,5 +1443,11 @@ body {
   .page-catalog__product__image {
     min-height: 267px;
   }
+}
+
+.page-catalog__doubts__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */
