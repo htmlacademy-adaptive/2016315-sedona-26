@@ -4,11 +4,10 @@
   justify-content: center;
   flex-direction: column;
   min-height: 158px;
-  background-image: url("../img/back-form-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background-image: url("../img/back-form-mobile.jpg") no-repeat;
   background-size: cover;
-  background-color: #000000;
+  background-position: bottom;
+  background-color: #5f3205;
 
   @media (max-width: 767px) {
     @media (min-resolution: 2dppx) {
@@ -17,20 +16,24 @@
   }
 
   @media (min-width: 768px) {
-    background: url("../img/back-tablet.jpg") no-repeat center;
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 290px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/retina/back-tablet@2.jpg");
+      background-size: cover;
     }
   }
 
   @media (min-width: 1200px) {
-    background: url("../img/back-desktop.jpg") no-repeat center;
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
     min-height: 301px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/retina/back-desktop@2.jpg");
+      background-size: cover;
     }
   }
 }
@@ -278,4 +281,10 @@
   @media (min-width: 768px) {
     min-height: 267px;
   }
+}
+
+.page-catalog__doubts__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
