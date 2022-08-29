@@ -8,7 +8,8 @@
   <title>Каталог Седона</title>
   <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 152×152 -->
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -53,7 +54,11 @@
 
     <main class="page-catalog">
       <div class="page-catalog__review">
-        <img src="./img/sedona.svg" alt="Название седона.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
+          <img src="img/sedona.svg" width="229" height="39" alt="Название седона.">
+        </picture>
       </div>
       <section class="page-catalog__foto-video">
         <h1 class="page-catalog__foto-video-title">Фото и видео</h1>
@@ -66,10 +71,12 @@
         <article class="page-catalog__product page-catalog__product--big-card">
           <a href="img/non-native-spaces.jpg">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/non-native-spaces-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/non-native-spaces-tablet.jpg">
-              <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg" alt="Вид дороги в закат."
-                width="280" height="280">
+              <source media="(min-width: 1200px)"
+                srcset="img/non-native-spaces-desktop.jpg 1x, img/retina/non-native-spaces-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/non-native-spaces-tablet.jpg 1x, img/retina/non-native-spaces-tablet@2.jpg 2x">
+              <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg 1x"
+                srcset="img/retina/non-native-spaces@2.jpg 2x" alt="Вид дороги в закат." width="280" height="280">
             </picture>
           </a>
           <div class="page-catalog__product-block-wrapper">
@@ -90,10 +97,12 @@
         <article class="page-catalog__product page-catalog__product--card">
           <a href="img/native-vegetation.jpg">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/native-vegetation-tablet.jpg">
-              <img class="page-catalog__product__image" src="img/native-vegetation.jpg" alt="Растение." width="280"
-                height="280">
+              <source media="(min-width: 1200px)"
+                srcset="img/native-vegetation-desktop.jpg 1x, img/retina/native-vegetation-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/native-vegetation-tablet.jpg 1x, img/retina/native-vegetation-tablet@2.jpg 2x">
+              <img class="page-catalog__product__image" src="img/native-vegetation.jpg 1x"
+                srcset="img/retina/native-vegetation@2.jpg 2x" alt="Растение." width="280" height="280">
             </picture>
           </a>
           <div class="page-catalog__product-block-wrapper">
@@ -114,10 +123,12 @@
         <article class="page-catalog__product page-catalog__product--card">
           <a href="img/road-north.jpg">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/road-north-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/road-north-tablet.jpg">
-              <img class="page-catalog__product__image" src="img/road-north.jpg" alt="Дорога в горах." width="280"
-                height="280">
+              <source media="(min-width: 1200px)"
+                srcset="img/road-north-desktop.jpg 1x, img/retina/road-north-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)"
+                srcset="img/road-north-tablet.jpg 1x, img/retina/road-north-tablet@2.jpg 2x">
+              <img class="page-catalog__product__image" src="img/road-north.jpg 1x"
+                srcset="img/retina/road-north@2.jpg 2x" alt="Дорога в горах." width="280" height="280">
             </picture>
           </a>
           <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
@@ -136,12 +147,13 @@
           </div>
         </article>
         <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/photo-bridge.jpg">
+          <a href="img/photo-4.jpg">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg">
-              <img class="page-catalog__product__image" src="img/photo-bridge.jpg" alt="Горный мост." width="280"
-                height="280">
+              <source media="(min-width: 1200px)"
+                srcset="img/photo-4-desktop.jpg 1x, img/retina/photo-4-desktop@2.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/retina/photo-4-tablet@2.jpg 2x">
+              <img class="page-catalog__product__image" src="img/photo-4.jpg 1x" srcset="img/retina/photo-4@2.jpg 2x"
+                alt="Горный мост." width="280" height="280">
             </picture>
           </a>
           <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
@@ -166,7 +178,7 @@
           очередной раз!
         </p>
         <div class="page-catalog__doubts-container">
-          <video class="page-catalog__doubts-video" width="280" height="177" poster="img/video-image.jpg">
+          <video class="page-catalog__doubts-video" width="280" height="177" poster="img/video.jpg">
           </video>
           <button class="page-catalog__doubts-button">
             <svg width="48" height="54" viewBox="0 0 48 54" aria-label="Воспроизвести." fill="none"
