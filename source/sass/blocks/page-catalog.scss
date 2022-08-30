@@ -4,9 +4,37 @@
   justify-content: center;
   flex-direction: column;
   min-height: 158px;
-  background-image: url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/back.jpg") no-repeat bottom;
+  background-size: cover;
+  background-color: #5f3205;
+
+  @media (max-width: 767px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back@2.jpg");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
+    min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-tablet@2.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
+    min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-desktop@2.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 .page-catalog__foto-video {
@@ -110,7 +138,7 @@
   .page-catalog__product-block-wrapper {
     position: absolute;
     width: 100%;
-    bottom: 30px;
+    bottom: 2px;
     background: rgba(0, 0, 0, 0.3);
   }
 }
@@ -125,6 +153,7 @@
     @media (min-width: 768px) {
       width: 100%;
       border-bottom: none;
+      padding: 0;
     }
   }
 
@@ -132,6 +161,8 @@
     @media (min-width: 768px) {
       width: 50%;
       border-bottom: none;
+      padding: 0;
+      margin: 0;
     }
 
     @media (min-width: 1200px) {
@@ -218,4 +249,41 @@
   height: 54px;
   border: none;
   background-color: transparent;
+}
+
+.page-catalog__doubts-video {
+  @media (min-width: 768px) {
+    width: 648px;
+    min-height: 500px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 800px;
+  }
+}
+
+.page-catalog__product__image-big {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    min-height: 400px;
+  }
+}
+
+.page-catalog__product__image {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    min-height: 267px;
+  }
+}
+
+.page-catalog__doubts-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

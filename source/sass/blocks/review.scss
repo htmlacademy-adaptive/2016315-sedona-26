@@ -5,9 +5,37 @@
   flex-direction: column;
   min-height: 158px;
   margin: 0 auto;
-  background-image: url("../img/back-desktop.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
+  background: url("../img/back-form.jpg") no-repeat bottom;
+  background-size: cover;
+  background-color: #5f3205;
+
+  @media (max-width: 767px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-form@2.jpg");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
+    min-height: 290px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-form-tablet@2.jpg");
+      background-size: cover;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
+    min-height: 301px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-form-desktop@2.jpg");
+      background-size: cover;
+    }
+  }
 }
 
 .review__next {

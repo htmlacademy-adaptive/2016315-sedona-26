@@ -1,10 +1,36 @@
 .welcome {
-  background: url("../img/back-mobile.jpg") no-repeat center;
-  text-align: center;
+  background: url("../img/back.jpg") no-repeat bottom;
+  background-color: #5f3205;
+  background-size: cover;
+
+  @media (max-width: 767px) {
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back@2.jpg");
+    }
+  }
+
+  @media (min-width: 768px) {
+    background: url("../img/back-tablet.jpg") no-repeat bottom;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-tablet@2.jpg");
+    }
+  }
+
+  @media (min-width: 1200px) {
+    background: url("../img/back-desktop.jpg") no-repeat bottom;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/retina/back-desktop@2.jpg");
+    }
+  }
 
   .welcome__image {
     display: block;
     padding: 90px 19px 85px;
     margin: 0 auto;
+    object-fit: cover;
   }
 }
