@@ -13,7 +13,7 @@
 </head>
 
 <body class="page__body">
-  <div class="page-container page-container-catalog">
+  <div class="page-container">
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
@@ -66,113 +66,115 @@
           забыть о
           политике и экономике.</p>
       </section>
-      <section class="page-catalog__gallery">
-        <h2 class="visually-hidden">Галлерея</h2>
-        <article class="page-catalog__product page-catalog__product--big-card">
-          <a href="img/non-native-spaces.jpg">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/non-native-spaces-desktop.jpg 1x, img/retina/non-native-spaces-desktop@2.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/non-native-spaces-tablet.jpg 1x, img/retina/non-native-spaces-tablet@2.jpg 2x">
-              <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg"
-                srcset="img/retina/non-native-spaces@2.jpg 2x" alt="Вид дороги в закат." width="280" height="280">
-            </picture>
-          </a>
-          <div class="page-catalog__product-block-wrapper">
-            <div class="page-catalog__product-wrapper-text">
-              <h3 class="page-catalog__product-title">Неродные просторы</h3>
-              <p class="page-catalog__product-text">Автор фото: Борис</p>
+      <div class="page-container-catalog">
+        <section class="page-catalog__gallery">
+          <h2 class="visually-hidden">Галлерея</h2>
+          <article class="page-catalog__product page-catalog__product--big-card">
+            <a href="img/non-native-spaces.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/non-native-spaces-desktop.jpg 1x, img/retina/non-native-spaces-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/non-native-spaces-tablet.jpg 1x, img/retina/non-native-spaces-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg"
+                  srcset="img/retina/non-native-spaces@2.jpg 2x" alt="Вид дороги в закат." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Неродные просторы</h3>
+                <p class="page-catalog__product-text">Автор фото: Борис</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="page-catalog__product-number">1350</span>
+              </div>
             </div>
-            <div class="page-catalog__product-like-number">
-              <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              <span class="page-catalog__product-number">1350</span>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/native-vegetation.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/native-vegetation-desktop.jpg 1x, img/retina/native-vegetation-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/native-vegetation-tablet.jpg 1x, img/retina/native-vegetation-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/native-vegetation.jpg"
+                  srcset="img/retina/native-vegetation@2.jpg 2x" alt="Растение." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Местная растительность</h3>
+                <p class="page-catalog__product-text">Автор фото: Сергей</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="page-catalog__product-number">143</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/native-vegetation.jpg">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/native-vegetation-desktop.jpg 1x, img/retina/native-vegetation-desktop@2.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/native-vegetation-tablet.jpg 1x, img/retina/native-vegetation-tablet@2.jpg 2x">
-              <img class="page-catalog__product__image" src="img/native-vegetation.jpg"
-                srcset="img/retina/native-vegetation@2.jpg 2x" alt="Растение." width="280" height="280">
-            </picture>
-          </a>
-          <div class="page-catalog__product-block-wrapper">
-            <div class="page-catalog__product-wrapper-text">
-              <h3 class="page-catalog__product-title">Местная растительность</h3>
-              <p class="page-catalog__product-text">Автор фото: Сергей</p>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/road-north.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/road-north-desktop.jpg 1x, img/retina/road-north-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/road-north-tablet.jpg 1x, img/retina/road-north-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/road-north.jpg"
+                  srcset="img/retina/road-north@2.jpg 2x" alt="Дорога в горах." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Дорога на север</h3>
+                <p class="page-catalog__product-text">Автор фото: Петр</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="page-catalog__product-number">96</span>
+              </div>
             </div>
-            <div class="page-catalog__product-like-number">
-              <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              <span class="page-catalog__product-number">143</span>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/photo-gor.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-gor-desktop.jpg 1x, img/retina/photo-gor-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-gor-tablet.jpg 1x, img/retina/photo-gor-tablet @2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/photo-gor.jpg" srcset="img/retina/photo-gor@2.jpg 2x"
+                  alt="Горный мост." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Мост дьявола</h3>
+                <p class="page-catalog__product-text">Автор фото: Антон</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
+                </svg>
+                <span class="page-catalog__product-number">254</span>
+              </div>
             </div>
-          </div>
-        </article>
-        <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/road-north.jpg">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/road-north-desktop.jpg 1x, img/retina/road-north-desktop@2.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/road-north-tablet.jpg 1x, img/retina/road-north-tablet@2.jpg 2x">
-              <img class="page-catalog__product__image" src="img/road-north.jpg" srcset="img/retina/road-north@2.jpg 2x"
-                alt="Дорога в горах." width="280" height="280">
-            </picture>
-          </a>
-          <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
-            <div class="page-catalog__product-wrapper-text">
-              <h3 class="page-catalog__product-title">Дорога на север</h3>
-              <p class="page-catalog__product-text">Автор фото: Петр</p>
-            </div>
-            <div class="page-catalog__product-like-number">
-              <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              <span class="page-catalog__product-number">96</span>
-            </div>
-          </div>
-        </article>
-        <article class="page-catalog__product page-catalog__product--card">
-          <a href="img/photo-gor.jpg">
-            <picture>
-              <source media="(min-width: 1200px)"
-                srcset="img/photo-gor-desktop.jpg 1x, img/retina/photo-gor-desktop@2.jpg 2x">
-              <source media="(min-width: 768px)"
-                srcset="img/photo-gor-tablet.jpg 1x, img/retina/photo-gor-tablet @2.jpg 2x">
-              <img class="page-catalog__product__image" src="img/photo-gor.jpg" srcset="img/retina/photo-gor@2.jpg 2x"
-                alt="Горный мост." width="280" height="280">
-            </picture>
-          </a>
-          <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
-            <div class="page-catalog__product-wrapper-text">
-              <h3 class="page-catalog__product-title">Мост дьявола</h3>
-              <p class="page-catalog__product-text">Автор фото: Антон</p>
-            </div>
-            <div class="page-catalog__product-like-number">
-              <svg class="page-catalog-like" width="23" height="28" viewBox="0 0 23 28" fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z" />
-              </svg>
-              <span class="page-catalog__product-number">254</span>
-            </div>
-          </div>
-        </article>
-      </section>
+          </article>
+        </section>
+      </div>
       <section class="page-catalog__doubts">
         <h2 class="page-catalog__doubts-title">Все еще сомневаетесь?</h2>
         <p class="page-catalog__doubts-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
@@ -182,7 +184,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/retina/video-desktop@2.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/retina/video-tablet@2.jpg 2x">
-            <img class="page-catalog__doubts__image" src="img/video.jpg" srcset="img/retina/video@2.jpg 2x" alt="Видео."
+            <img class="page-catalog__doubts-image" src="img/video.jpg" srcset="img/retina/video@2.jpg 2x" alt="Видео."
               width="280" height="177">
           </picture>
           <button class="page-catalog__doubts-button">
