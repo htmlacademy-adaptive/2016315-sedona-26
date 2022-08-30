@@ -329,6 +329,7 @@ body {
   display: block;
   object-fit: cover;
   width: 100%;
+  height: 100%;
 }
 
 .advantages__title {
@@ -634,7 +635,7 @@ body {
   flex-direction: column;
   min-height: 158px;
   margin: 0 auto;
-  background-image: url("../img/back-form.jpg") no-repeat bottom;
+  background: url("../img/back-form.jpg") no-repeat bottom;
   background-size: cover;
   background-color: #5f3205;
 }
@@ -1158,9 +1159,8 @@ body {
   justify-content: center;
   flex-direction: column;
   min-height: 158px;
-  background-image: url("../img/back-form-mobile.jpg") no-repeat;
+  background: url("../img/back.jpg") no-repeat bottom;
   background-size: cover;
-  background-position: bottom;
   background-color: #5f3205;
 }
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 2dppx) {
@@ -1445,7 +1445,7 @@ body {
   }
 }
 
-.page-catalog__doubts__image {
+.page-catalog__doubts-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
