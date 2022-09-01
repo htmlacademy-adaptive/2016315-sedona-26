@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Каталог Седона</title>
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
+  <link rel="manifest" href="manifest.webmanifest">
+  <base href="https://htmlacademy-adaptive.github.io/2016315-sedona-26/9/">
+</head>
+
+<body class="page__body">
+  <div class="page-container">
+    <header class="main-header">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
+      </a>
+      <nav class="main-nav main-nav--closed main-nav--nojs">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
+          <svg class="main-nav__image-open" width="23" height="22">
+            <use href="img/sprite.svg#icon-open"></use>
+          </svg>
+          <svg class="main-nav__image-close" width=23" height="23">
+            <use href="img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__list-item main-nav__list-item--1">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--2">
+              <a class="main-nav__link">Фото и видео</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--3">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__list-item main-nav__list-item--4">
+              <a class="main-nav__link" href="https://htmlacademy.ru">Html academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-catalog">
+      <div class="page-catalog__review">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
+          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
+          <img src="img/sedona.svg" width="229" height="39" alt="Название седона.">
+        </picture>
+      </div>
+      <section class="page-catalog__foto-video">
+        <h1 class="page-catalog__foto-video-title">Фото и видео</h1>
+        <p class="page-catalog__foto-video-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
+          забыть о
+          политике и экономике.</p>
+      </section>
+      <div class="page-container-catalog">
+        <section class="page-catalog__gallery">
+          <h2 class="visually-hidden">Галлерея</h2>
+          <article class="page-catalog__product page-catalog__product--big-card">
+            <a href="img/non-native-spaces.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/non-native-spaces-desktop.jpg 1x, img/retina/non-native-spaces-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/non-native-spaces-tablet.jpg 1x, img/retina/non-native-spaces-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image-big" src="img/non-native-spaces.jpg"
+                  srcset="img/retina/non-native-spaces@2.jpg 2x" alt="Вид дороги в закат." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Неродные просторы</h3>
+                <p class="page-catalog__product-text">Автор фото: Борис</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28">
+                  <use href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <span class="page-catalog__product-number">1350</span>
+              </div>
+            </div>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/native-vegetation.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/native-vegetation-desktop.jpg 1x, img/retina/native-vegetation-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/native-vegetation-tablet.jpg 1x, img/retina/native-vegetation-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/native-vegetation.jpg"
+                  srcset="img/retina/native-vegetation@2.jpg 2x" alt="Растение." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Местная растительность</h3>
+                <p class="page-catalog__product-text">Автор фото: Сергей</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28">
+                  <use href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <span class="page-catalog__product-number">143</span>
+              </div>
+            </div>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/road-north.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/road-north-desktop.jpg 1x, img/retina/road-north-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/road-north-tablet.jpg 1x, img/retina/road-north-tablet@2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/road-north.jpg"
+                  srcset="img/retina/road-north@2.jpg 2x" alt="Дорога в горах." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Дорога на север</h3>
+                <p class="page-catalog__product-text">Автор фото: Петр</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28">
+                  <use href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <span class="page-catalog__product-number">96</span>
+              </div>
+            </div>
+          </article>
+          <article class="page-catalog__product page-catalog__product--card">
+            <a href="img/photo-gor.jpg">
+              <picture>
+                <source media="(min-width: 1200px)"
+                  srcset="img/photo-gor-desktop.jpg 1x, img/retina/photo-gor-desktop@2.jpg 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/photo-gor-tablet.jpg 1x, img/retina/photo-gor-tablet @2.jpg 2x">
+                <img class="page-catalog__product__image" src="img/photo-gor.jpg" srcset="img/retina/photo-gor@2.jpg 2x"
+                  alt="Горный мост." width="280" height="280">
+              </picture>
+            </a>
+            <div class="page-catalog__product-block-wrapper page-catalog__product-block-wrapper--color">
+              <div class="page-catalog__product-wrapper-text">
+                <h3 class="page-catalog__product-title">Мост дьявола</h3>
+                <p class="page-catalog__product-text">Автор фото: Антон</p>
+              </div>
+              <div class="page-catalog__product-like-number">
+                <svg class="page-catalog-like" width="23" height="28">
+                  <use href="img/sprite.svg#icon-like"></use>
+                </svg>
+                <span class="page-catalog__product-number">254</span>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <section class="page-catalog__doubts">
+        <h2 class="page-catalog__doubts-title">Все еще сомневаетесь?</h2>
+        <p class="page-catalog__doubts-text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+          очередной раз!
+        </p>
+        <div class="page-catalog__doubts-container">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/retina/video-desktop@2.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/retina/video-tablet@2.jpg 2x">
+            <img class="page-catalog__doubts-image" src="img/video.jpg" srcset="img/retina/video@2.jpg 2x" alt="Видео."
+              width="280" height="177">
+          </picture>
+          <button class="page-catalog__doubts-button">
+            <svg width="48" height="54" aria-label="Воспроизвести.">
+              <use href="img/sprite.svg#icon-play"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__block-wrapper">
+        <h2 class="visually-hidden">Как с нами связаться</h2>
+        <a class="page-footer__link-sedona" href="#">#Visitsedona</a>
+        <ul class="page-footer__list-social">
+          <li class="page-footer-social page-footer-social--vkontakte">
+            <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer-social page-footer-social--telegram">
+            <a class="page-footer__social-link" href="https://t.me/htmlacademy">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="page-footer-social page-footer-social--youtube">
+            <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
+              <svg width="24" height="24">
+                <use href="img/sprite.svg#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__academy">
+          <p class="page-footer__title">Разработано</p>
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="27" height="35">
+              <use href="img/sprite.svg#icon-academy"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="js/scripts.js" defer></script>
+</body>
+
+</html>
