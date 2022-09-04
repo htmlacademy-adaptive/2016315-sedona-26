@@ -1,8 +1,13 @@
-@media (min-width: 768px) {
-  .page-main__groop-block-wrapper {
+.page-main__groop-block-wrapper {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-top: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 0;
   }
 }
 
@@ -14,19 +19,39 @@
   @media (max-width: 767px) {
     justify-content: flex-start;
   }
+
+  @media (min-width: 768px) {
+    padding-top: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 70px 12px 0 95px;
+  }
+}
+
+.page-main__groop-label-wrapper--visited {
+  @media (min-width: 1200px) {
+    padding: 70px 0 20px;
+  }
 }
 
 .page-main__groop-label-wrapper--impression {
-  @media (max-width: 1199px) {
-    max-width: 560px;
+  @media (min-width: 768px) {
+    max-width: 596px;
     justify-content: flex-start;
+    padding-top: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    min-width: 960px;
+    padding: 54px 0 0 85px;
   }
 }
 
 @media (min-width: 768px) {
   .page-main__groop-line {
     position: relative;
-    width: 39%;
+    width: 42%;
   }
 
   .page-main__groop-line::before {
@@ -37,6 +62,11 @@
     top: 50%;
     left: 115%;
     background-color: #dbdbdb;
+
+    @media (min-width: 1200px) {
+      width: 62%;
+      left: 94%;
+    }
   }
 
   .page-main__groop-line::after {
@@ -47,6 +77,11 @@
     top: 50%;
     right: 115%;
     background-color: #dbdbdb;
+
+    @media (min-width: 1200px) {
+      width: 62%;
+      right: 94%;
+    }
   }
 }
 
@@ -61,7 +96,49 @@
 
   @media (min-width: 768px) {
     border-bottom: none;
-    padding: 24px 60px 39px;
+    padding: 24px 60px 25px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 30px;
+  }
+}
+
+.page-main__groop-content--emotions {
+  @media (min-width: 768px) {
+    padding-top: 12px;
+    padding-bottom: 36px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 37px;
+  }
+}
+
+.page-main__groop-content--visited {
+  @media (max-width: 767px) {
+    padding: 24px 20px 0;
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 22px;
+  }
+}
+
+.page-main__groop-content--contact-info {
+  @media (max-width: 767px) {
+    padding: 22px 20px;
+  }
+}
+
+.page-main__groop-content--impression {
+  @media (max-width: 767px) {
+    padding: 23px 20px 0;
   }
 }
 
@@ -69,17 +146,33 @@
 .page-main__groop-content--contact-info {
   @media (min-width: 768px) {
     width: 45%;
+    padding: 0 42px 72px 21px;
+    margin-top: 72px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-top: 58px;
+    margin-bottom: 32px;
+    padding: 0 95px 0 44px;
   }
 }
 
 .page-main__groop-content--full-name {
   @media (min-width: 768px) {
     border-right: 1px solid #dbdbdb;
+    padding: 0 43px 14px 20px;
+    margin-bottom: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-left: 27px;
+    padding: 0 0 15px 47px;
   }
 }
 
 .page-main__groop-title {
-  width: 240px;
+  min-width: 240px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -88,6 +181,96 @@
   text-align: center;
   text-transform: uppercase;
   margin: 24px auto;
+
+  @media (min-width: 768px) {
+    font-size: 21px;
+  }
+}
+
+.page-main__groop-title--emotions {
+  margin: 0 auto;
+  padding: 0 0 18px;
+
+  @media (min-width: 768px) {
+    padding: 0;
+  }
+}
+
+.page-main__groop-control-emotions--textarea {
+  padding-bottom: 7px;
+}
+
+.page-main__groop-title--visited {
+  margin: 0 auto;
+
+  @media (max-width: 320px) {
+    padding-bottom: 29px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 25px;
+  }
+}
+
+.page-main__groop-title--impression {
+  margin: 0 auto;
+
+  @media (max-width: 320px) {
+    padding-bottom: 29px;
+  }
+}
+
+.page-main__groop-control-impression--positive {
+  padding-bottom: 4px;
+  padding-left: 10px;
+}
+
+.page-main__groop-control-impression--negative {
+  padding-bottom: 4px;
+  padding-left: 10px;
+
+  @media (min-width: 1200px) {
+    padding-left: 25px;
+  }
+}
+
+.page-main__groop-control-impression--dont-know {
+  padding-bottom: 4px;
+  padding-left: 10px;
+
+  @media (min-width: 1200px) {
+    padding-left: 28px;
+  }
+}
+
+.page-main__groop-title--info {
+  margin: 0 auto;
+  padding-bottom: 21px;
+
+  @media (min-width: 768px) {
+    padding: 0 4px 28px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 54px 28px 22px;
+  }
+}
+
+.page-main__groop-control-info--phone {
+  padding-bottom: 15px;
+}
+
+.page-main__groop-control-info--email {
+  padding-bottom: 15px;
+}
+
+.page-main__groop-title--full-name {
+  margin: 0 auto;
+  padding: 30px 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 41px 20px;
+  }
 }
 
 .page-main__groop-text,
@@ -104,21 +287,59 @@
   margin-left: 16px;
 }
 
+.page-main__groop-text-info {
+  @media (min-width: 768px) {
+    padding: 0 23px 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 18px 0;
+  }
+}
+
 .page-main__groop-text-impression,
 .page-main__groop-text-visited {
   width: 187px;
-  padding-left: 55px;
+  padding-left: 60px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
+
+  @media (min-width: 768px) {
+    padding-left: 68px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__groop-text-visited--park {
+    padding-left: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-main__groop-text-visited--bridge {
+    padding-left: 58px;
+  }
 }
 
 .page-main__groop-control,
 .page-main__groop-control-info {
   width: 100%;
+}
+
+.page-main__groop-control--name {
+  padding-bottom: 15px;
+
+  @media (min-width: 768px) {
+    padding: 7px 0 16px;
+  }
+}
+
+.page-main__groop-control--surname {
+  padding-bottom: 17px;
 }
 
 .page-main__groop-input {
@@ -151,6 +372,11 @@
   line-height: 26px;
   background: #f2f2f2 url("../img/phone.svg") no-repeat right;
   border: none;
+
+  @media (min-width: 768px) {
+    padding: 16px 18px 16px;
+    margin: 0 21px;
+  }
 }
 
 .page-main__groop-input-info-phone::placeholder {
@@ -169,6 +395,11 @@
   line-height: 26px;
   background: #f2f2f2 url("../img/email.svg") no-repeat center right;
   border: none;
+
+  @media (min-width: 768px) {
+    padding: 16px 18px 16px;
+    margin: 0 21px;
+  }
 }
 
 .page-main__groop-input-info-email::placeholder {
@@ -246,6 +477,58 @@
   margin-bottom: 32px;
 }
 
+.page-main__groop-control-visited--bell {
+  padding-bottom: 4px;
+
+  @media (min-width: 768px) {
+    width: 225px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 176px;
+    padding: 0;
+  }
+}
+
+.page-main__groop-control-visited--bridge {
+  padding-bottom: 4px;
+
+  @media (min-width: 768px) {
+    width: 251px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 170px;
+    padding-right: 68px;
+  }
+}
+
+.page-main__groop-control-visited--park {
+  padding-bottom: 4px;
+
+  @media (min-width: 768px) {
+    width: 251px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 170px;
+    padding-left: 61px;
+  }
+}
+
+.page-main__groop-control-visited--rocks {
+  padding-bottom: 4px;
+
+  @media (min-width: 768px) {
+    width: 225px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 190px;
+    padding-left: 42px;
+  }
+}
+
 .page-main__groop-mark-visited {
   position: absolute;
   width: 46px;
@@ -286,8 +569,13 @@
 
 .page-main__groop-control-emotions {
   width: 100%;
-  margin-bottom: 56px;
+  margin-bottom: 41px;
   text-align: center;
+
+  @media (min-width: 768px) {
+    margin-top: 28px;
+    margin-bottom: 34px;
+  }
 }
 
 .page-main__groop-textarea-emotions {
@@ -303,6 +591,7 @@
   color: #000000;
   resize: vertical;
   border: none;
+  min-height: 150px;
 
   @media (min-width: 768px) {
     min-height: 160px;
@@ -313,8 +602,8 @@
 @media (min-width: 768px) {
   .page-main__groop-text-emotions-block-wrapper {
     display: flex;
-    align-items: flex-end;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 768px;
   }
@@ -327,7 +616,7 @@
   color: #ffffff;
   box-sizing: border-box;
   padding: 18px 34px 13px 32px;
-  width: 281px;
+  min-width: 281px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -335,6 +624,14 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-bottom: 3px;
+
+  @media (min-width: 768px) {
+    padding: 18px 77px 13px 65px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 19px 108px 13px 94px;
+  }
 }
 
 .page-main__groop-text-emotions {
@@ -347,4 +644,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: rgba(51, 51, 51, 0.6);
+
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
 }
