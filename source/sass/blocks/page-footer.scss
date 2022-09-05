@@ -4,19 +4,25 @@
   width: 100%;
 }
 
-@media (min-width: 768px) {
-  .page-footer {
+.page-footer {
+  @media (min-width: 768px) {
     padding-top: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 34px;
   }
 }
 
-@media (min-width: 1200px) {
-  .page-footer {
-    padding-top: 34px;
-  }
-
-  .page-footer--form {
+.page-footer--form {
+  @media (min-width: 1200px) {
     padding-top: 25px;
+  }
+}
+
+.page-footer--index {
+  @media (max-width: 320px) {
+    padding-top: 23px;
   }
 }
 

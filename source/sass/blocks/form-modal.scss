@@ -25,33 +25,36 @@
   background: #ffffff;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   box-sizing: border-box;
+  width: 320px;
 }
 
 .form-modal__groop--error {
   padding: 46px 42px 35px 41px;
-  margin: 36% auto;
+  margin: 116px auto;
 
   @media (min-width: 768px) {
-    margin: 37% 24%;
+    margin: 283px auto;
     padding: 46px 42px 49px 41px;
+    width: 400px;
   }
 
   @media (min-width: 1200px) {
-    margin: 19% 34%;
+    margin: 244px auto;
   }
 }
 
 .form-modal__groop--fixed {
   padding: 18px 20px 0;
-  margin: 125% auto;
+  margin: 402px auto;
 
   @media (min-width: 768px) {
-    margin: 21% 8%;
     padding: 20px 42px 0;
+    margin: 162px auto;
+    width: 640px;
   }
 
-  @media (min-width: 1200px) {
-    margin: 11% 25%;
+  @media (min-width: 768px) {
+    margin: 145px auto;
   }
 }
 
