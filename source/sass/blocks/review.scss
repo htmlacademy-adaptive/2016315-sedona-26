@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 158px;
+  min-height: 157px;
   margin: 0 auto;
   background: url("../img/back-form.jpg") no-repeat bottom;
   background-size: cover;
@@ -18,7 +18,7 @@
   @media (min-width: 768px) {
     background: url("../img/back-tablet.jpg") no-repeat bottom;
     background-size: cover;
-    min-height: 290px;
+    min-height: 289px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/retina/back-form-tablet@2.jpg");
@@ -38,9 +38,13 @@
   }
 }
 
+.review__img-sedona {
+  padding-bottom: 13px;
+}
+
 .review__next {
   position: relative;
-  padding: 0 20px;
+  padding: 0 20px 29px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +56,11 @@
   @media (min-width: 768px) {
     width: 100%;
     border: none;
+    padding: 0;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 91px;
   }
 }
 
@@ -77,6 +86,17 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+  margin: 0;
+  padding: 40px 20px 20px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    padding: 64px 64px 22px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 22px;
+  }
 }
 
 .review__text {
@@ -88,8 +108,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
 
   @media (min-width: 768px) {
     padding: 0 166px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8px 380px;
   }
 }

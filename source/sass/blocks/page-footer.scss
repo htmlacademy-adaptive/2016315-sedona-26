@@ -4,6 +4,28 @@
   width: 100%;
 }
 
+.page-footer {
+  @media (min-width: 768px) {
+    padding-top: 26px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 34px;
+  }
+}
+
+.page-footer--form {
+  @media (min-width: 1200px) {
+    padding-top: 25px;
+  }
+}
+
+.page-footer--index {
+  @media (max-width: 320px) {
+    padding-top: 23px;
+  }
+}
+
 .page-footer__block-wrapper {
   display: flex;
   flex-direction: column;
@@ -17,7 +39,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     min-height: 120px;
-    padding: 0 60px;
+    padding: 0 45px;
   }
 
   @media (min-width: 1200px) {
@@ -37,23 +59,35 @@
   text-transform: uppercase;
   color: #000000;
   margin-bottom: 35px;
-  margin-top: 38px;
+  margin-top: 14px;
+
+  @media (min-width: 768px) {
+    margin-top: 36px;
+  }
+}
+
+.page-footer__link-sedona--name {
+  @media (min-width: 768px) {
+    margin-top: 36px;
+  }
 }
 
 .page-footer__list-social {
   width: 166px;
   display: flex;
-  gap: 10px;
+  gap: 7px;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 
   @media (min-width: 768px) {
     margin-bottom: 0;
+    margin-right: 7px;
+    gap: 6px;
   }
 }
 
@@ -73,6 +107,18 @@
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
+
+  @media (min-width: 768px) {
+    width: 156px;
+    gap: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-footer__link-academy {
+    padding-left: 13px;
+    padding-top: 6px;
+  }
 }
 
 .page-footer__title {
