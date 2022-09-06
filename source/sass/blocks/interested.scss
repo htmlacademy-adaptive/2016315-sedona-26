@@ -27,6 +27,10 @@
 
   @media (min-width: 768px) {
     font-size: 30px;
+    padding: 33px 0 0;
+  }
+
+  @media (min-width: 1200px) {
     padding: 3px;
   }
 }
@@ -45,11 +49,11 @@
   padding-bottom: 32px;
 
   @media (min-width: 768px) {
-    padding: 30px 30px 42px;
+    padding: 32px 145px 42px;
   }
 
   @media (min-width: 1200px) {
-    padding-bottom: 47px;
+    padding: 31px 240px 47px;
   }
 }
 
