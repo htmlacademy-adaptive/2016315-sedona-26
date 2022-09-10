@@ -97,6 +97,29 @@
   height: 24px;
   padding: 12px;
   background: #81b3d2;
+
+  &:hover {
+    background: #669ec0;
+    fill: #ffffff;
+  }
+
+  &:active {
+    background: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.page-footer__social-svg {
+  fill: #ffffff;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    fill: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .page-footer__academy {
@@ -121,6 +144,16 @@
   }
 }
 
+.page-footer__svg-academy {
+  &:hover {
+    fill: #81b3d2;
+  }
+
+  &:active {
+    fill: #b3b3b3;
+  }
+}
+
 .page-footer__title {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
@@ -130,4 +163,14 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
+}
+
+.page-footer__title--svg-academy {
+  &:hover {
+    color: #81b3d2;
+  }
+
+  &:active {
+    color: #b3b3b3;
+  }
 }
