@@ -34,7 +34,7 @@
 
   @media (min-width: 768px) {
     margin: 283px auto;
-    padding: 46px 42px 49px 41px;
+    padding: 47px 42px 49px 41px;
     width: 400px;
   }
 
@@ -113,6 +113,12 @@
   }
 }
 
+.form-modal__groop-text-error {
+  @media (min-width: 768px) {
+    padding: 24px 10px 0;
+  }
+}
+
 .form-modal__groop-fixed-wallpaper {
   display: flex;
   flex-direction: column;
@@ -145,6 +151,20 @@
   line-height: 26px;
   text-transform: uppercase;
   margin-top: 29px;
+
+  &:hover {
+    background: #669ec0;
+  }
+
+  &:active {
+    background: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+  }
 
   @media (min-width: 768px) {
     font-size: 21px;

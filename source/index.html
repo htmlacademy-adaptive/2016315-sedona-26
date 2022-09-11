@@ -11,9 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsans.woff" as="font" type="fonts/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="fonts/woff" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -23,11 +21,11 @@
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__image-open" width="23" height="22">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка</span>
+          <svg class="main-nav__image-open" width="23" height="22" aria-label="Открыть меню.">
             <use href="img/sprite.svg#icon-open"></use>
           </svg>
-          <svg class="main-nav__image-close" width="23" height="23">
+          <svg class="main-nav__image-close" width="23" height="23" aria-label="Закрыть меню.">
             <use href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -53,19 +51,14 @@
     <main class="page-main">
       <section class="welcome">
         <h1 class="visually-hidden">Седона в Аризоне</h1>
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/text-index.svg" width="460" height="350">
-          <source media="(min-width: 768px)" srcset="img/text-index.svg" width="461" height="350">
-          <img class="welcome__image" src="img/text-index.svg" width="282" height="214"
-            alt="Добро пожаловать в Седону.">
-        </picture>
+        <img class="welcome__image" src="img/text-index.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
       </section>
       <section class="advantages">
         <div class="advantages__welcome">
           <p class="advantages__title">Седона — небольшой городок в аризоне, заслуживающий большего!</p>
           <h2 class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         </div>
-        <div class="advatages__block-wrapper">
+        <div class="advantages__block-wrapper">
           <div class="advantages__item-color">
             <h3 class="advantages__title advantages__title--city">Настоящий городок</h3>
             <p class="advantages__number">— №1 —</p>
@@ -115,7 +108,7 @@
             </p>
           </li>
         </ol>
-        <div class="advantage__wrapper-block">
+        <div class="advantages__wrapper-block">
           <div class="advantages__item-color advantages__item-color--revers">
             <h3 class="advantages__title advantages__title--revers">Там есть мост дьявола</h3>
             <p class="advantages__number">— №2 —</p>
@@ -148,7 +141,7 @@
               совсем не скучно!
             </p>
           </div>
-          <div class="advantages__item-advantages">
+          <div class="advantages__item-advantages advantages__item-advantages--tourists">
             <h3 class="advantages__title advantages__title--advantages">Мало туристов</h3>
             <p class="advantages__number">— №5 —</p>
             <p class="advantages__text advantages__text--advantages">Большинство едет в гранд каньон и толпится там</p>
@@ -158,7 +151,7 @@
       <section class="interested">
         <h2 class="interested__title">Заинтересовались?</h2>
         <p class="interested__text">Укажите предполагаемые даты поездки,
-          &nbsp;и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предложения&nbsp;гостиниц&nbsp;в&nbsp;седоне</p>
+          и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения&nbsp;гостиниц&nbsp;в&nbsp;седоне</p>
         <a class="interested__link" href="#">Найти гостиницу</a>
       </section>
     </main>
@@ -172,36 +165,35 @@
         </iframe>
       </section>
 
-      <div class="page-footer__block-wrapper page-footer--index">
+      <div class="page-footer__block-wrapper page-footer__block-wrapper--index">
         <h2 class="visually-hidden">Как с нами связаться</h2>
         <a class="page-footer__link-sedona" href="#">#Visitsedona</a>
         <ul class="page-footer__list-social">
           <li class="page-footer-social page-footer-social--vkontakte">
             <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на вконтакте.">
                 <use href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--telegram">
             <a class="page-footer__social-link" href="https://t.me/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на телеграм.">
                 <use href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--youtube">
             <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на ютуб.">
                 <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__academy">
-          <p class="page-footer__title page-footer__title--svg-academy">Разработано</p>
-          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__svg-academy" width="27" height="35">
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">Разработано&nbsp;&nbsp;
+            <svg class="page-footer__svg-academy" width="27" height="35" aria-label="Ссылка на HTML академию.">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>

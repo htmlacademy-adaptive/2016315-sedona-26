@@ -1,5 +1,7 @@
 .welcome {
-  background: url("../img/back.jpg") no-repeat bottom;
+  background-image: url("../img/back.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-color: #5f3205;
   background-size: cover;
 
@@ -10,8 +12,7 @@
   }
 
   @media (min-width: 768px) {
-    background: url("../img/back-tablet.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/back-tablet.jpg");
     min-height: 518px;
 
     @media (min-resolution: 2dppx) {
@@ -20,8 +21,7 @@
   }
 
   @media (min-width: 1200px) {
-    background: url("../img/back-desktop.jpg") no-repeat bottom;
-    background-size: cover;
+    background-image: url("../img/back-desktop.jpg");
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/retina/back-desktop@2.jpg");
@@ -36,6 +36,8 @@
 
     @media (min-width: 768px) {
       padding: 77px;
+      width: 461px;
+      height: 350px;
     }
   }
 }

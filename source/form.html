@@ -11,9 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsans.woff" as="font" type="fonts/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="fonts/woff" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -23,11 +21,11 @@
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__image-open" width="23" height="22">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка</span>
+          <svg class="main-nav__image-open" width="23" height="22" aria-label="Открыть меню.">
             <use href="img/sprite.svg#icon-open"></use>
           </svg>
-          <svg class="main-nav__image-close" width="23" height="23">
+          <svg class="main-nav__image-close" width="23" height="23" aria-label="Закрыть меню.">
             <use href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -53,16 +51,13 @@
     <main class="page-main">
       <h1 class="visually-hidden">Форма заполнения отзыва</h1>
       <div class="review">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
-          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
-          <img class="review__img-sedona" src="img/sedona.svg" width="229" height="39" alt="Название седона.">
-        </picture>
+        <img class="review__img-sedona" src="img/sedona.svg" width="229" height="39" alt="Название седона.">
       </div>
-      <section class="review__next">
-        <h2 class="review__title">Оставьте свой отзыв</h2>
-        <p class="review__text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами
-          достопрмечательностях</p>
+      <section class="page-main__review-next">
+        <h2 class="page-main__review-title">Оставьте свой отзыв</h2>
+        <p class="page-main__review-text">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных
+          вами
+          достопримечательностях</p>
       </section>
       <div class="page-main__wrapper">
         <form class="page-main__groop" action="https://echo.htmlacademy.ru" method="get">
@@ -192,30 +187,29 @@
         <ul class="page-footer__list-social">
           <li class="page-footer-social page-footer-social--vkontakte">
             <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на вконтакте.">
                 <use href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--telegram">
             <a class="page-footer__social-link" href="https://t.me/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на телеграм.">
                 <use href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--youtube">
             <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на ютуб.">
                 <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__academy">
-          <p class="page-footer__title page-footer__title--svg-academy">Разработано</p>
-          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__svg-academy" width="27" height="35">
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">Разработано&nbsp;&nbsp;
+            <svg class="page-footer__svg-academy" width="27" height="35" aria-label="Ссылка на HTML академию.">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>

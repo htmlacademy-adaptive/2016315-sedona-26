@@ -16,7 +16,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 2;
+  z-index: 1000;
 
   @media (min-width: 768px) {
     display: none;
@@ -28,8 +28,12 @@
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  z-index: 1;
+  z-index: 100;
   display: block;
+
+  @media (min-width: 768px) {
+    z-index: 10;
+  }
 }
 
 .main-nav__list {
@@ -121,9 +125,19 @@
     padding: 17px 5px;
     color: #000000;
     border-top: none;
-    background: none;
+    background: #ffffff;
     font-size: 14px;
     line-height: 21px;
+
+    &:hover {
+      color: #81b3d2;
+      background: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+      background: #ffffff;
+    }
   }
 }
 
@@ -151,6 +165,7 @@
 
   .main-nav__image-close {
     display: block;
+    fill: #ffffff;
 
     &:hover {
       fill: rgba(255, 255, 255, 0.6);
