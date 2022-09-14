@@ -11,9 +11,7 @@
   <link rel="apple-touch-icon" href="img/favicons/apple.png"> <!-- 180×180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="fonts/ptsans.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsans.woff" as="font" type="fonts/woff" crossorigin="anonymous">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="fonts/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/ptsansbold.woff" as="font" type="fonts/woff" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -23,11 +21,11 @@
         <img class="main-header__logo-image" src="img/logo.png" alt="Логотип Седона." width="185" height="96">
       </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__button" type="button"><span class="visually-hidden">Открыть меню</span>
-          <svg class="main-nav__image-open" width="23" height="22">
+        <button class="main-nav__button" type="button"><span class="visually-hidden">Кнопка</span>
+          <svg class="main-nav__image-open" width="23" height="22" aria-label="Открыть меню.">
             <use href="img/sprite.svg#icon-open"></use>
           </svg>
-          <svg class="main-nav__image-close" width="23" height="23">
+          <svg class="main-nav__image-close" width="23" height="23" aria-label="Закрыть меню.">
             <use href="img/sprite.svg#icon-close"></use>
           </svg>
         </button>
@@ -52,11 +50,7 @@
 
     <main class="page-catalog">
       <div class="page-catalog__review">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/sedona.svg" width="460" height="80">
-          <source media="(min-width: 768px)" srcset="img/sedona.svg" width="457" height="77">
-          <img class="page-catalog__img-sedona" src="img/sedona.svg" width="229" height="39" alt="Название седона.">
-        </picture>
+        <img class="page-catalog__img-sedona" src="img/sedona.svg" width="229" height="39" alt="Название седона.">
       </div>
       <section class="page-catalog__foto-video">
         <h1 class="page-catalog__foto-video-title">Фото и видео</h1>
@@ -64,12 +58,19 @@
           забыть о
           политике и экономике.</p>
       </section>
-      <div class="page-container-catalog">
+      <div class="page-container__catalog">
         <section class="page-catalog__gallery">
           <h2 class="visually-hidden">Галлерея</h2>
           <article class="page-catalog__product page-catalog__product--big-card">
             <a href="img/non-native-spaces.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/non-native-spaces-desktop.webp 1x, img/retina/non-native-spaces-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/non-native-spaces-tablet.webp 1x, img/retina/non-native-spaces-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/non-native-spaces.webp 1x, img/retina/non-native-spaces@2.webp 2x">
+
                 <source media="(min-width: 1200px)"
                   srcset="img/non-native-spaces-desktop.jpg 1x, img/retina/non-native-spaces-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -84,7 +85,7 @@
                 <p class="page-catalog__product-text">Автор фото: Борис</p>
               </div>
               <div class="page-catalog__product-like-number">
-                <svg class="page-catalog-like" width="23" height="28">
+                <svg class="page-catalog-like" width="23" height="28" aria-label="Поставить лайк.">
                   <use href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="page-catalog__product-number">1350</span>
@@ -94,6 +95,13 @@
           <article class="page-catalog__product page-catalog__product--card">
             <a href="img/native-vegetation.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/native-vegetation-desktop.webp 1x, img/retina/native-vegetation-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/native-vegetation-tablet.webp 1x, img/retina/native-vegetation-tablet@2.webp 2x">
+                <source type="image/webp"
+                  srcset="img/native-vegetation.webp 1x, img/retina/native-vegetation@2.webp 2x">
+
                 <source media="(min-width: 1200px)"
                   srcset="img/native-vegetation-desktop.jpg 1x, img/retina/native-vegetation-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -108,7 +116,7 @@
                 <p class="page-catalog__product-text">Автор фото: Сергей</p>
               </div>
               <div class="page-catalog__product-like-number">
-                <svg class="page-catalog-like" width="23" height="28">
+                <svg class="page-catalog-like" width="23" height="28" aria-label="Поставить лайк.">
                   <use href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="page-catalog__product-number">143</span>
@@ -118,6 +126,12 @@
           <article class="page-catalog__product page-catalog__product--card">
             <a href="img/road-north.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/road-north-desktop.webp 1x, img/retina/road-north-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/road-north-tablet.webp 1x, img/retina/road-north-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/road-north.webp 1x, img/retina/road-north@2.webp 2x">
+
                 <source media="(min-width: 1200px)"
                   srcset="img/road-north-desktop.jpg 1x, img/retina/road-north-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
@@ -132,7 +146,7 @@
                 <p class="page-catalog__product-text">Автор фото: Петр</p>
               </div>
               <div class="page-catalog__product-like-number">
-                <svg class="page-catalog-like" width="23" height="28">
+                <svg class="page-catalog-like" width="23" height="28" aria-label="Поставить лайк.">
                   <use href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="page-catalog__product-number">96</span>
@@ -142,10 +156,16 @@
           <article class="page-catalog__product page-catalog__product--card">
             <a href="img/photo-gor.jpg">
               <picture>
+                <source type="image/webp" media="(min-width: 1200px)"
+                  srcset="img/photo-gor-desktop.webp 1x, img/retina/photo-gor-desktop@2.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="img/photo-gor-tablet.webp 1x, img/retina/photo-gor-tablet@2.webp 2x">
+                <source type="image/webp" srcset="img/photo-gor.webp 1x, img/retina/photo-gor@2.webp 2x">
+
                 <source media="(min-width: 1200px)"
                   srcset="img/photo-gor-desktop.jpg 1x, img/retina/photo-gor-desktop@2.jpg 2x">
                 <source media="(min-width: 768px)"
-                  srcset="img/photo-gor-tablet.jpg 1x, img/retina/photo-gor-tablet @2.jpg 2x">
+                  srcset="img/photo-gor-tablet.jpg 1x, img/retina/photo-gor-tablet@2.jpg 2x">
                 <img class="page-catalog__product__image" src="img/photo-gor.jpg" srcset="img/retina/photo-gor@2.jpg 2x"
                   alt="Горный мост." width="280" height="280">
               </picture>
@@ -156,7 +176,7 @@
                 <p class="page-catalog__product-text">Автор фото: Антон</p>
               </div>
               <div class="page-catalog__product-like-number">
-                <svg class="page-catalog-like" width="23" height="28">
+                <svg class="page-catalog-like" width="23" height="28" aria-label="Поставить лайк.">
                   <use href="img/sprite.svg#icon-like"></use>
                 </svg>
                 <span class="page-catalog__product-number">254</span>
@@ -172,6 +192,12 @@
         </p>
         <div class="page-catalog__doubts-container">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)"
+              srcset="img/video-desktop.webp 1x, img/retina/video-desktop@2.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/video-tablet.webp 1x, img/retina/video-tablet@2.webp 2x">
+            <source type="image/webp" srcset="img/video.webp 1x, img/retina/video@2.webp 2x">
+
             <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg 1x, img/retina/video-desktop@2.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/video-tablet.jpg 1x, img/retina/video-tablet@2.jpg 2x">
             <img class="page-catalog__doubts-image" src="img/video.jpg" srcset="img/retina/video@2.jpg 2x" alt="Видео."
@@ -193,30 +219,29 @@
         <ul class="page-footer__list-social">
           <li class="page-footer-social page-footer-social--vkontakte">
             <a class="page-footer__social-link" href="https://vk.com/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на вконтакте.">
                 <use href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--telegram">
             <a class="page-footer__social-link" href="https://t.me/htmlacademy">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на телеграм.">
                 <use href="img/sprite.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="page-footer-social page-footer-social--youtube">
             <a class="page-footer__social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <svg class="page-footer__social-svg" width="24" height="24">
+              <svg class="page-footer__social-svg" width="24" height="24" aria-label="Ссылка на ютуб.">
                 <use href="img/sprite.svg#icon-youtube"></use>
               </svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__academy">
-          <p class="page-footer__title page-footer__title--svg-academy">Разработано</p>
-          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="page-footer__svg-academy" width="27" height="35">
+          <a class="page-footer__link-academy" href="https://htmlacademy.ru/intensive/adaptive">Разработано&nbsp;&nbsp;
+            <svg class="page-footer__svg-academy" width="27" height="35" aria-label="Ссылка на HTML академию.">
               <use href="img/sprite.svg#icon-academy"></use>
             </svg>
           </a>

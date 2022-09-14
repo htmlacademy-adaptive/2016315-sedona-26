@@ -1,7 +1,7 @@
 .advantages {
   position: relative;
 
-  .advatages__block-wrapper {
+  .advantages__block-wrapper {
     display: flex;
     flex-direction: column;
 
@@ -221,7 +221,7 @@
 }
 
 @media (min-width: 768px) {
-  .advantage__wrapper-block {
+  .advantages__wrapper-block {
     display: grid;
     grid-template-columns: 2fr 1fr;
 
@@ -404,5 +404,11 @@
     .advantages__text--road {
       padding: 20px 45px;
     }
+  }
+}
+
+.advantages__item-advantages--tourists {
+  @media (max-width: 767px) {
+    border-bottom: none;
   }
 }

@@ -2,6 +2,19 @@
   border: none;
   display: block;
   width: 100%;
+  background-image: url("../img/map-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 350px;
+
+  @media (min-width: 768px) {
+    background-image: url("../img/map-tablet.png");
+  }
+
+  @media (min-width: 1200px) {
+    background-image: url("../img/map-desktop.png");
+  }
 }
 
 .page-footer {
@@ -20,7 +33,7 @@
   }
 }
 
-.page-footer--index {
+.page-footer__block-wrapper--index {
   @media (max-width: 320px) {
     padding-top: 23px;
   }
@@ -97,28 +110,16 @@
   height: 24px;
   padding: 12px;
   background: #81b3d2;
+  color: #ffffff;
 
   &:hover {
     background: #669ec0;
-    fill: #ffffff;
+    color: #ffffff;
   }
 
   &:active {
     background: #5496bd;
-    fill: rgba(255, 255, 255, 0.3);
-  }
-}
-
-.page-footer__social-svg {
-  fill: #ffffff;
-
-  &:hover {
-    background: #669ec0;
-  }
-
-  &:active {
-    background: #5496bd;
-    fill: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
@@ -137,24 +138,19 @@
   }
 }
 
-@media (min-width: 768px) {
-  .page-footer__link-academy {
-    padding-left: 13px;
-    padding-top: 6px;
-  }
-}
-
 .page-footer__svg-academy {
+  vertical-align: middle;
+
   &:hover {
-    fill: #81b3d2;
+    color: #81b3d2;
   }
 
   &:active {
-    fill: #b3b3b3;
+    color: #b3b3b3;
   }
 }
 
-.page-footer__title {
+.page-footer__link-academy {
   font-family: "PT Sans", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -163,9 +159,13 @@
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-}
+  text-decoration: none;
 
-.page-footer__title--svg-academy {
+  @media (min-width: 768px) {
+    padding-left: 13px;
+    padding-top: 6px;
+  }
+
   &:hover {
     color: #81b3d2;
   }

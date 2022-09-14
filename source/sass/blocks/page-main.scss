@@ -360,9 +360,10 @@
     background: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background: #ffffff;
-    border: 4px solid #e5e5e5;
+    box-shadow: 0 0 1px 4px #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: 1200px) {
@@ -387,9 +388,10 @@
     background: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background: #ffffff;
-    border: 4px solid #e5e5e5;
+    box-shadow: 0 0 1px 4px #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: 768px) {
@@ -419,9 +421,10 @@
     background: #e5e5e5;
   }
 
-  &:active {
+  &:focus {
     background: #ffffff;
-    border: 4px solid #e5e5e5;
+    box-shadow: 0 0 1px 4px #e5e5e5;
+    outline: none;
   }
 
   @media (min-width: 768px) {
@@ -442,14 +445,6 @@
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
-
-  &:hover {
-    background: #e5e5e5;
-  }
-
-  &:active {
-    background: rgba(51, 51, 51, 0.3);
-  }
 }
 
 .page-main__groop-control-impression {
@@ -465,6 +460,14 @@
   height: 46px;
   background: #f2f2f2;
   border-radius: 50%;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
 
 .page-main__groop-input-impression:checked + .page-main__groop-mark-impression {
@@ -479,7 +482,7 @@
 
 .page-main__groop-input-impression:checked:focus + .page-main__groop-mark-impression {
   background: #e5e5e5;
-  background-image: url("../img/radio-click.svg");
+  background-image: url("../img/radio-click-off.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -579,6 +582,14 @@
   height: 46px;
   background: #f2f2f2;
   border-radius: 4px;
+
+  &:hover {
+    background: #e5e5e5;
+  }
+
+  &:active {
+    background: #d5d5d5;
+  }
 }
 
 .page-main__groop-input-visited:checked + .page-main__groop-mark-visited {
@@ -593,7 +604,7 @@
 
 .page-main__groop-input-visited:checked:focus + .page-main__groop-mark-visited {
   background: #e5e5e5;
-  background-image: url("../img/tick.svg");
+  background-image: url("../img/tick-disabled.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -678,6 +689,11 @@
     color: rgba(255, 255, 255, 0.3);
   }
 
+  &:disabled {
+    background: #e5e5e5;
+    color: #ffffff;
+  }
+
   @media (min-width: 768px) {
     padding: 18px 77px 13px 65px;
   }
@@ -700,5 +716,49 @@
 
   @media (min-width: 768px) {
     font-size: 14px;
+    color: #333333;
+  }
+}
+
+.page-main__review-title {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: 0;
+  padding: 40px 20px 20px;
+
+  @media (min-width: 768px) {
+    font-size: 30px;
+    padding: 64px 64px 22px;
+  }
+
+  @media (min-width: 1200px) {
+    padding-top: 22px;
+  }
+}
+
+.page-main__review-text {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    padding: 0 166px;
+    line-height: 24px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 8px 380px;
   }
 }
