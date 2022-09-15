@@ -3,6 +3,7 @@ const nav = document.querySelector('.main-nav'); // находим навига�
 const closedClass = 'main-nav--closed'; // класс, который будем добавлять или удалять с навигации
 
 nav.classList.remove('main-nav--nojs');
+nav.classList.add('main-nav--closed');
 
 button.addEventListener('click', () => { // слушаем клике на кнопке
   nav.classList.toggle(closedClass); // Как только на кнопке произойдёт клик у навигации смениться класс main-nav--closed
